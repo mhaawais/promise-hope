@@ -9,7 +9,7 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: "Home – Public Speaking",  
-  description: "",
+  description: "Discover Jacob Ken Robinson’s journey as a speaker, educator, and author transforming credit education through humor, wisdom, and real-world experience.",
 };
 
 export default function Home() {

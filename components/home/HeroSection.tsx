@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Link from "next/link";
 
 export default function HeroSection() {
   const [isVisible, setIsVisible] = useState(false);
@@ -33,27 +34,31 @@ export default function HeroSection() {
             }`}
           >
             <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
-              Discover Your Next
+              Turn Budget Talks
               <span className="block text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-orange-500">
-                Literary Adventure
+                into Power Plays
               </span>
             </h1>
 
             <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-2xl leading-relaxed">
-              Immerse yourself in captivating stories that will transport you to
-              extraordinary worlds. Join thousands of readers on an
-              unforgettable journey through the pages of imagination.
+              In Public Speaking: Credit Edition, Jacob Ken Robinson uses humor,
+              real-life experience, and storytelling to make financial literacy
+              engaging. Perfect for teachers, speakers, or anyone tired of debt,
+              this book helps you share credit wisdom that sticks—and changes
+              lives.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 mb-12">
-              <button className="bg-gradient-to-r from-yellow-400 to-orange-500 text-white px-8 py-4 rounded-full text-lg font-semibold hover:shadow-2xl transition-all duration-300 transform hover:scale-105 whitespace-nowrap cursor-pointer">
-                <i className="ri-shopping-cart-line mr-2"></i>
-                Get the Book Now
-              </button>
-              <button className="bg-white/20 backdrop-blur-sm text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-[#1a4280] transition-all duration-300 border border-white/30 whitespace-nowrap cursor-pointer">
+              <Link href="/pre-order">
+                <button className="bg-gradient-to-r from-yellow-400 to-orange-500 text-white px-8 py-4 rounded-full text-lg font-semibold hover:shadow-2xl transition-all duration-300 transform hover:scale-105 whitespace-nowrap cursor-pointer">
+                  <i className="ri-shopping-cart-line mr-2"></i>
+                  Get the Book Now
+                </button>
+              </Link>
+              {/* <button className="bg-white/20 backdrop-blur-sm text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-[#1a4280] transition-all duration-300 border border-white/30 whitespace-nowrap cursor-pointer">
                 <i className="ri-play-circle-line mr-2"></i>
                 Read About Book
-              </button>
+              </button> */}
             </div>
 
             {/* Stats */}

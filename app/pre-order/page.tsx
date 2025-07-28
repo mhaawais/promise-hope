@@ -9,7 +9,7 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: "Order Now – Public Speaking",  
-  description: "",
+  description: "Pre-order Public Speaking: Credit Edition by Jacob Ken Robinson and get early access to a practical, story-driven guide to mastering your financial future.",
 };
 
 export default function BookBuy() {

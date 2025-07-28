@@ -8,7 +8,7 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: "Contact – Jacob Ken Robinson",  
-  description: "",
+  description: "Get in touch with Jacob Ken Robinson for speaking engagements, interviews, or inquiries about Public Speaking: Credit Edition and financial education programs.",
 };
 
 export default function ContactPage() {

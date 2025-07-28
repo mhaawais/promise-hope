@@ -6,49 +6,49 @@ export default function AuthorAchievements() {
   const achievements = [
     {
       id: 1,
-      title: "PEN/Faulkner Award",
-      year: 2023,
-      description: "Awarded for outstanding literary achievement in fiction",
+      title: "Veteran Career Comeback",
+      year: "2020s",
+      description: "Came out of retirement to rejoin Miles’s pre-owned department and mentor the next generation.",
       icon: "ri-award-line",
       color: "from-yellow-400 to-orange-500"
     },
     {
       id: 2,
-      title: "National Book Critics Circle Award",
-      year: 2019,
-      description: "Recognized for excellence in literary criticism and fiction",
+      title: "Financial Literacy Advocate",
+      year: "2000s–Present",
+      description: "Over 20 years teaching community financial literacy classes focused on credit, budgeting, and empowerment.",
       icon: "ri-medal-line",
       color: "from-blue-400 to-purple-500"
     },
     {
       id: 3,
-      title: "Hemingway Award",
-      year: 2015,
-      description: "First novel award for exceptional debut work",
+      title: "Chamber Delegate Recognition",
+      year: 1981,
+      description: "Represented the Illinois Black Chamber of Commerce in Nassau to expand Black-owned product distribution.",
       icon: "ri-trophy-line",
       color: "from-green-400 to-blue-500"
     },
     {
       id: 4,
-      title: "Goodreads Choice Award",
-      year: 2021,
-      description: "Readers' choice for best fiction of the year",
+      title: "Salesman of the Year",
+      year: "1980s–2000s",
+      description: "Received multiple awards for top performance at Miles’s dealership over a decades-long career.",
       icon: "ri-heart-line",
       color: "from-pink-400 to-red-500"
     },
     {
       id: 5,
-      title: "O. Henry Prize",
-      year: 2018,
-      description: "Outstanding achievement in short story writing",
+      title: "Cosmetology Industry Leader",
+      year: "1970s–2000s",
+      description: "Built a 30+ year career in the beauty industry, becoming a respected voice in Black hair care.",
       icon: "ri-pen-nib-line",
       color: "from-purple-400 to-pink-500"
     },
     {
       id: 6,
-      title: "Columbia University Distinguished Alumni",
-      year: 2020,
-      description: "Honored for contributions to literature and education",
+      title: "Vietnam Service Medal",
+      year: "1969–1970",
+      description: "Honored for military service as a helicopter supply specialist during the Vietnam War.",
       icon: "ri-graduation-cap-line",
       color: "from-indigo-400 to-blue-500"
     }

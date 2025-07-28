@@ -42,28 +42,16 @@ export default function BookDetails() {
                 <h3 className="text-3xl font-bold text-[#1a4280] mb-6">Book Synopsis</h3>
                 <div className="space-y-6 text-lg text-gray-700 leading-relaxed">
                   <p>
-                    In &quot;The Public Speaking Credit Edition,&quot; Jacob Ken Robinson masterfully weaves a tale of self-discovery 
-                    that takes readers on an emotional odyssey through the complexities of human nature. 
-                    The story follows Emma, a successful architect who finds herself questioning everything 
-                    she thought she knew about life, love, and purpose.
+                   Public Speaking: Credit Edition offers a refreshing take on financial literacy, turning complex credit concepts into engaging, easy-to-understand lessons. With the energy of a live speech and the clarity of a classroom favorite, it’s designed to capture attention and inspire action.
                   </p>
                   <p>
-                    When a chance encounter with a mysterious stranger leads Emma to discover a hidden 
-                    journal from her grandmother, she embarks on a transformative journey that spans 
-                    decades and continents. Through the pages of this forgotten diary, Emma uncovers 
-                    family secrets that challenge her understanding of her own identity.
+                    Author Ken Robinson blends decades of real-world experience with humor and storytelling, proving that money talk does n&apos;t have to be dull. His approach makes learning about credit not only accessible, but actually enjoyable for readers of all backgrounds.
                   </p>
                   <p>
-                    Set against the backdrop of both contemporary New York and post-war Europe, this 
-                    novel explores themes of resilience, forgiveness, and the power of human connection. 
-                    As Emma delves deeper into her grandmother&apos;s past, she must confront her own fears 
-                    and learn to embrace the uncertainty that comes with truly living.
+                   From students navigating their first credit cards to professionals buried in debt, this book equips readers with the tools to build, manage, and master credit. Through vivid examples and practical advice, Robinson helps you connect the dots between smart credit habits and lasting financial freedom.
                   </p>
                   <p>
-                    &quot;The Public Speaking&quot; is a profound meditation on the stories we tell ourselves 
-                    and the courage it takes to rewrite our own narratives. With lyrical prose and 
-                    unforgettable characters, this novel will resonate with anyone who has ever 
-                    questioned their place in the world.
+                   Whether you’re a teacher, public speaker, or simply someone ready for a financial breakthrough, this book shows you how to speak—and live—with confidence when it comes to credit. No jargon. No fear. Just knowledge that sticks and empowers.
                   </p>
                 </div>
               </div>

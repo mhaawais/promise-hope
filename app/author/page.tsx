@@ -9,7 +9,7 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: "Author – Jacob Ken Robinson",  
-  description: "",
+  description: "Learn about Jacob Ken Robinson—veteran, educator, entrepreneur, and award-winning salesman—on a mission to empower lives through credit literacy and leadership.",
 };
 
 export default function AuthorPage() {

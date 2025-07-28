@@ -8,7 +8,7 @@ export default function BookPurchase() {
   const [quantity, setQuantity] = useState(1);
 
   const formats = [
-    { id: 'hardcover', name: 'Hardcover', price: 29.99, description: 'Premium hardcover edition', image: '/assets/images/Hardcover.png' },
+    { id: 'hardcover', name: 'Hardcover', price: 29.99, description: 'Premium hardcover edition', image: '/assets/images/Hardcover-1.png' },
     { id: 'paperback', name: 'Paperback', price: 24.99, description: 'Standard paperback edition', image: '/assets/images/paperback.png' },
     { id: 'ebook', name: 'E-book', price: 12.99, description: 'Digital edition for all devices', image: '/assets/images/ebook.png' },
     // { id: 'audiobook', name: 'Audiobook', price: 19.99, description: 'Narrated by professional voice actor' },
@@ -75,9 +75,9 @@ export default function BookPurchase() {
                        <Image
                             src={format.image}
                             alt={format.name}
-                            width={600}
-                            height={600}
-                            className="object-cover rounded-sm mt-2 w-full"
+                            width={250}
+                            height={250}
+                            className="object-cover rounded-sm mt-2"
                           />
                     </label>
                   ))}

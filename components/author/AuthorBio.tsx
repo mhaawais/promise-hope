@@ -14,23 +14,27 @@ export default function AuthorBio() {
             {/* Main Bio */}
             <div className="lg:col-span-2 space-y-6 text-lg text-gray-700 leading-relaxed">
               <p>
-                Jacob Ken Robinson discovered her passion for storytelling at the age of seven when she wrote her first short story about a magical library. Born and raised in Seattle, Washington, she spent her childhood surrounded by the misty landscapes and rich cultural heritage that would later influence her writing.
+                Jacob Ken Robinson is a multifaceted professional whose journey spans over five decades and multiple industries. Born with a passion for service and self-improvement, Jacob began building the foundation of his legacy in the late 1960s. After graduating from Eisenhower High School, he pursued higher education at Illinois State University, where he cultivated the communication and leadership skills that would later define his professional path.
               </p>
               
               <p>
-                After graduating summa cum laude from Columbia University with a degree in English Literature, Sarah began her career as a journalist for The Seattle Times. Her investigative pieces and human interest stories earned her recognition, but it was her transition to fiction that truly allowed her voice to flourish.
+                In 1969, Jacob was drafted into the U.S. military and served honorably in Vietnam as a helicopter supply specialist. His time in the service, from 1969 to 1970, instilled in him a deep sense of discipline, precision, and perseverance—qualities that would guide every step of his life thereafter. Upon returning home, Jacob transitioned into civilian life with a renewed purpose and a vision for building both business and community.
               </p>
               
               <p>
-                Her debut novel, &quot;Echoes of Tomorrow,&quot; was published in 2009 and immediately captured the attention of critics and readers alike. The book&apos;s exploration of family dynamics and personal growth resonated with audiences worldwide, establishing Sarah as a powerful new voice in contemporary literature.
+                In the early 1970s, Jacob began his journey in the cosmetology industry, where he quickly established himself as a respected figure. Over the course of more than 30 years, he built a successful career in Black hair care, combining entrepreneurial insight with a passion for cultural representation. His impact reached international levels in 1981 when he was selected as a delegate to Nassau, Bahamas, representing the Illinois Black Chamber of Commerce. There, he engaged in strategic discussions with the late Prime Minister Lynden Pindling on expanding the distribution of Black-owned hair care products.
               </p>
               
               <p>
-                Over the years, Jacob has published eight bestselling novels, each delving deeper into the complexities of human relationships and the resilience of the human spirit. Her work has been translated into twelve languages and has earned numerous prestigious awards, including the National Book Critics Circle Award and the PEN/Faulkner Award.
+                Simultaneously, Jacob carved out a parallel career in automotive sales, joining Miles’s dealership and working his way to the top. Over 30 years, he earned multiple “Salesman of the Year” awards and became known for his integrity, customer loyalty, and standout performance in the pre-owned vehicle market. Even after retiring, Jacob was invited back to rejoin the Miles team, where he continues to share his expertise and mentor the next generation of sales professionals.
               </p>
               
               <p>
-                When not writing, Jacob enjoys hiking in the Pacific Northwest, practicing yoga, and mentoring emerging writers through various literary programs. She currently divides her time between Seattle and a small cabin in the Cascade Mountains, where she finds inspiration for her most profound works.
+                Driven by a desire to educate and uplift others, Jacob also dedicated himself to teaching financial literacy. For more than 20 years, he has led workshops and community classes aimed at helping people understand credit, budgeting, and long-term financial planning. His unique ability to combine personal stories, real-world examples, and clear instruction has made him a trusted voice in financial empowerment—especially for underserved communities.
+              </p>
+
+               <p>
+                Outside of his professional work, Jacob is known for his soulful singing voice and love of classic music. From Neil Diamond to Lloyd Price, he brings life to every note at his favorite karaoke bars, blending entertainment with heart. His charisma, warmth, and authenticity have made him a beloved figure in every circle he joins.
               </p>
             </div>
 
@@ -39,28 +43,28 @@ export default function AuthorBio() {
               <h3 className="text-2xl font-bold text-[#1a4280] mb-6">Career Timeline</h3>
               <div className="space-y-4">
                 <div className="border-l-4 border-[#1a4280] pl-4">
-                  <div className="font-semibold text-[#1a4280]">2025</div>
-                  <div className="text-sm text-gray-600">Published &quot;The Journey Within&quot;</div>
+                  <div className="font-semibold text-[#1a4280]">2020s</div>
+                  <div className="text-sm text-gray-600"> Author & Mentor</div>
                 </div>
                 <div className="border-l-4 border-[#6989b0] pl-4">
-                  <div className="font-semibold text-[#1a4280]">2024</div>
-                  <div className="text-sm text-gray-600">Won PEN/Faulkner Award</div>
+                  <div className="font-semibold text-[#1a4280]">2000s - Present</div>
+                  <div className="text-sm text-gray-600">Financial Literacy Educator</div>
                 </div>
                 <div className="border-l-4 border-[#6989b0] pl-4">
-                  <div className="font-semibold text-[#1a4280]">2023</div>
-                  <div className="text-sm text-gray-600">Published &quot;Midnight Reflections&quot;</div>
+                  <div className="font-semibold text-[#1a4280]">1980s–2010s</div>
+                  <div className="text-sm text-gray-600">Automotive Sales Success</div>
                 </div>
                 <div className="border-l-4 border-[#6989b0] pl-4">
-                  <div className="font-semibold text-[#1a4280]">2022</div>
-                  <div className="text-sm text-gray-600">National Book Critics Circle Award</div>
+                  <div className="font-semibold text-[#1a4280]">1981</div>
+                  <div className="text-sm text-gray-600">International Delegation Role</div>
                 </div>
                 <div className="border-l-4 border-[#6989b0] pl-4">
-                  <div className="font-semibold text-[#1a4280]">2021</div>
-                  <div className="text-sm text-gray-600">Published &quot;The Silent Symphony&quot;</div>
+                  <div className="font-semibold text-[#1a4280]">Early 1970s</div>
+                  <div className="text-sm text-gray-600">Cosmetology Career Begins</div>
                 </div>
                 <div className="border-l-4 border-[#6989b0] pl-4">
-                  <div className="font-semibold text-[#1a4280]">2020</div>
-                  <div className="text-sm text-gray-600">Debut novel &quot;Echoes of Tomorrow&quot;</div>
+                  <div className="font-semibold text-[#1a4280]">1969–1970</div>
+                  <div className="text-sm text-gray-600">Vietnam War Service</div>
                 </div>
               </div>
             </div>

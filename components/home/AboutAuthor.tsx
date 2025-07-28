@@ -38,11 +38,11 @@ export default function AboutAuthor() {
             </div>
 
             <p className="text-base sm:text-lg text-gray-500 leading-relaxed animate__animated animate__fadeIn animate__delay-2s">
-              Jacob Ken Robinson is an award-winning author with over 15 years of experience crafting stories that touch the heart and stir the soul. Her unique ability to blend emotional depth with compelling narratives has earned her recognition from critics and readers alike.
+              Ken Robinson is a seasoned professional with over 30 years of experience in both the cosmetology and automotive industries. Celebrated as “Salesman of the Year” multiple times, he built a strong reputation for excellence, dedication, and customer service across his career.
             </p>
 
             <p className="text-base sm:text-lg text-gray-500 leading-relaxed animate__animated animate__fadeIn animate__delay-3s">
-              With multiple bestsellers under her belt, Jacob continues to explore the human condition through her writing, creating characters that resonate with readers across all walks of life.
+              In addition to his business success, Ken has spent more than 20 years teaching financial literacy, equipping individuals with the tools to manage money wisely. In 1981, he represented the Illinois Black Chamber of Commerce as a delegate to Nassau, Bahamas, where he met with the late Prime Minister Lynden Pindling to discuss Black hair care product distribution.
             </p>
 
             {/* Achievements */}

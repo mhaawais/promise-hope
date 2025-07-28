@@ -3,6 +3,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function FeaturedBook() {
   const [showFullCover, setShowFullCover] = useState(false);
@@ -38,12 +39,12 @@ export default function FeaturedBook() {
                 />
                 {showFullCover && (
                   <Image
-                  //   src={`https://readdy.ai/api/search-image?query=Complete%20book%20cover%20design%20showing%20front%20and%20back%2C%20full%20book%20spine%20view%2C%20professional%20book%20mockup%20with%20both%20covers%20visible%2C%20literary%20fiction%20book%20design%2C%20elegant%20typography%2C%20sophisticated%20color%20scheme&width=600&height=400&seq=bookfull1&orientation=landscape`}
-                   
-                     src="/assets/images/half.jpg"
+                    //   src={`https://readdy.ai/api/search-image?query=Complete%20book%20cover%20design%20showing%20front%20and%20back%2C%20full%20book%20spine%20view%2C%20professional%20book%20mockup%20with%20both%20covers%20visible%2C%20literary%20fiction%20book%20design%2C%20elegant%20typography%2C%20sophisticated%20color%20scheme&width=600&height=400&seq=bookfull1&orientation=landscape`}
+
+                    src="/assets/images/half.jpg"
                     alt="Full Book Cover"
-                     width={400}
-                 height={400}
+                    width={400}
+                    height={400}
                     className="absolute inset-0 w-full h-auto rounded-lg shadow-2xl opacity-100 transition-all duration-500"
                   />
                 )}
@@ -68,21 +69,23 @@ export default function FeaturedBook() {
                 Public Speaking
               </h3>
               <p className="text-lg text-gray-500 mb-6">
-                A profound exploration of human nature and the power of
-                resilience. This captivating novel takes readers on an emotional
-                journey through the complexities of love, loss, and
-                self-discovery.
+                Public Speaking: Credit Edition turns dry money talk into a fun,
+                fast-paced crash course on credit. With humor, real stories, and
+                clear examples, Ken Robinson teaches how to speak—and act—smart
+                about credit. Perfect for students, professionals, or anyone
+                ready to master money and take control of their financial
+                future.
               </p>
             </div>
 
             {/* Book Details */}
             <div className="grid grid-cols-2 gap-4 text-sm">
               <div className="bg-gray-50 p-4 rounded-lg">
-                <span className="font-semibold text-[#1a4280]">Pages:</span> 342
+                <span className="font-semibold text-[#1a4280]">Pages:</span> 330
               </div>
               <div className="bg-gray-50 p-4 rounded-lg">
                 <span className="font-semibold text-[#1a4280]">Genre:</span>{" "}
-                Literary Fiction
+                Personal Finance & Speaking
               </div>
               <div className="bg-gray-50 p-4 rounded-lg">
                 <span className="font-semibold text-[#1a4280]">Published:</span>{" "}
@@ -116,15 +119,21 @@ export default function FeaturedBook() {
 
             {/* Action Buttons */}
             <div className="flex flex-col sm:flex-row gap-4">
-              <button className="bg-gradient-to-r from-[#1a4280] to-[#6989b0] text-white px-8 py-3 rounded-full hover:shadow-xl transition-all duration-300 transform hover:scale-105 font-semibold whitespace-nowrap cursor-pointer">
+              <Link href="/pre-order" >
+                <button className="bg-gradient-to-r from-[#1a4280] to-[#6989b0] text-white px-8 py-3 rounded-full hover:shadow-xl transition-all duration-300 transform hover:scale-105 font-semibold whitespace-nowrap cursor-pointer">
+                  <i className="ri-shopping-cart-line mr-2"></i>
+                  Buy Now
+                </button>
+              </Link>
+              {/* <button className="bg-gradient-to-r from-[#1a4280] to-[#6989b0] text-white px-8 py-3 rounded-full hover:shadow-xl transition-all duration-300 transform hover:scale-105 font-semibold whitespace-nowrap cursor-pointer">
                 <i className="ri-shopping-cart-line mr-2"></i>
-                {/* Buy Now - $24.99 */}
+                {/* Buy Now - $24.99
                 Buy Now
-              </button>
-              <button className="border-2 border-[#1a4280] text-[#1a4280] px-8 py-3 rounded-full hover:bg-[#1a4280] hover:text-white transition-all duration-300 font-semibold whitespace-nowrap cursor-pointer">
+              </button> */}
+              {/* <button className="border-2 border-[#1a4280] text-[#1a4280] px-8 py-3 rounded-full hover:bg-[#1a4280] hover:text-white transition-all duration-300 font-semibold whitespace-nowrap cursor-pointer">
                 <i className="ri-book-open-line mr-2"></i>
                 Read Sample
-              </button>
+              </button> */}
             </div>
           </div>
         </div>

@@ -6,7 +6,7 @@ import Image from "next/image";
 export default function AuthorGallery() {
   const [selectedImage, setSelectedImage] = useState<{
     id: number;
-    title: string;
+    // title: string;
     description: string;
     image: string;
   } | null>(null);
@@ -14,30 +14,29 @@ export default function AuthorGallery() {
   const galleryImages = [
     {
       id: 1,
-      title: "Author Reading at Literary Festival",
-      description:
-        "Jacob ken captivating audiences at the International Literary Festival",
+      // title: "Author Reading at Literary Festival",
+      description: "Jacob ken captivating audience",
       //   image: "https://readdy.ai/api/search-image?query=Professional%20author%20reading%20at%20literary%20festival%2C%20elegant%20woman%20at%20podium%2C%20warm%20lighting%2C%20audience%20in%20background%2C%20sophisticated%20literary%20event%20atmosphere&width=600&height=400&seq=gallery1&orientation=landscape"
       image: "/assets/images/author-2.jpeg",
     },
     {
       id: 2,
-      title: "Book Signing Event",
-      description: "Meeting fans and signing books at the downtown bookstore",
+      // title: "Book Signing Event",
+      description: "Book Signing Event",
       //   image: "https://readdy.ai/api/search-image?query=Author%20signing%20books%20at%20bookstore%20event%2C%20professional%20woman%20interacting%20with%20readers%2C%20warm%20bookstore%20atmosphere%2C%20literary%20event%20setting&width=600&height=400&seq=gallery2&orientation=landscape"
       image: "/assets/images/author-3.jpeg",
     },
     {
       id: 3,
-      title: "Writing Retreat in the Mountains",
-      description: "Finding inspiration in the peaceful mountain cabin",
+      // title: "Writing Retreat in the Mountains",
+      description: "Finding inspiration",
       // image: "https://readdy.ai/api/search-image?query=Author%20writing%20in%20cozy%20mountain%20cabin%2C%20typewriter%20on%20wooden%20desk%2C%20warm%20fireplace%20lighting%2C%20peaceful%20writing%20environment%2C%20inspiring%20workspace&width=600&height=400&seq=gallery3&orientation=landscape"
       image: "/assets/images/author-4.jpeg",
     },
     {
       id: 4,
-      title: "Award Ceremony",
-      description: "Receiving the National Book Critics Circle Award",
+      // title: "Award Ceremony",
+      description: "Award Ceremony",
       //  image: "https://readdy.ai/api/search-image?query=Professional%20author%20receiving%20literary%20award%2C%20elegant%20award%20ceremony%20setting%2C%20sophisticated%20woman%20in%20formal%20attire%2C%20prestigious%20literary%20event&width=600&height=400&seq=gallery4&orientation=landscape"
       image: "/assets/images/author-5.jpeg",
     },
@@ -91,14 +90,14 @@ export default function AuthorGallery() {
             >
               <Image
                 src={image.image}
-                alt={image.title}
+                alt="Gallery Image"
                 height={300}
                 width={300}
                 className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <div className="absolute bottom-4 left-4 right-4 text-white">
-                  <h3 className="font-semibold text-lg mb-1">{image.title}</h3>
+                  {/* <h3 className="font-semibold text-lg mb-1">{image.title}</h3> */}
                   <p className="text-sm text-white/90">{image.description}</p>
                 </div>
               </div>
@@ -116,7 +115,7 @@ export default function AuthorGallery() {
               <div className="relative">
                 <Image
                   src={selectedImage.image}
-                  alt={selectedImage.title}
+                  alt="full image"
                   height={100}
                   width={100}
                   className="w-full h-auto max-h-[60vh] object-cover"
@@ -129,9 +128,14 @@ export default function AuthorGallery() {
                 </button>
               </div>
               <div className="p-6">
-                <h3 className="text-2xl font-bold text-[#1a4280] mb-2">
+                {/* <h3 className="text-2xl font-bold text-[#1a4280] mb-2">
                   {selectedImage.title}
-                </h3>
+                </h3> */}
+                <div className="border-b border-gray-200 mb-4 pb-2">
+                  <span className="text-[#1a4280] text-lg font-semibold">
+                    Image Description
+                  </span>
+                </div>
                 <p className="text-gray-600">{selectedImage.description}</p>
               </div>
             </div>
