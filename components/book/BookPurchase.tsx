@@ -29,13 +29,15 @@ export default function BookPurchase() {
           {/* Responsive image container */}
           <div className="flex justify-center mb-12">
             <div className="border-4 border-black p-2 sm:p-4 rounded-lg bg-black max-w-full w-full sm:w-[400px] md:w-[500px] lg:w-[600px]">
-              <Image
+              
+              <Image               
                 src="/assets/images/full.jpg"
                 alt="Book Cover"
                 width={600}
                 height={600}
                 className="w-full h-auto rounded-lg shadow-lg"
               />
+              
             </div>
           </div>
 
