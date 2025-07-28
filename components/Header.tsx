@@ -25,16 +25,19 @@ export default function Header() {
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center space-x-8">
-            <Link href="/" className="text-gray-800 hover:text-[#1a4280] transition-colors duration-300 font-bold text-lg">
+            <Link href="/" className="text-gray-800 hover:text-[#1a4280] hover:underline transition-colors duration-300 font-semibold hover:font-bold text-lg">
               Home
             </Link>
-            <Link href="/book" className="text-gray-800 hover:text-[#1a4280] transition-colors duration-300 font-bold text-lg">
+            <Link href="/book" className="text-gray-800 hover:text-[#1a4280] hover:underline transition-colors duration-300 font-semibold hover:font-bold text-lg">
               Book
             </Link>
-            <Link href="/author" className="text-gray-800 hover:text-[#1a4280] transition-colors duration-300 font-bold text-lg">
+            <Link href="/pre-order" className="text-gray-800 hover:text-[#1a4280] hover:underline transition-colors duration-300 font-semibold hover:font-bold text-lg">
+              Pre-Order
+            </Link>
+            <Link href="/author" className="text-gray-800 hover:text-[#1a4280] hover:underline transition-colors duration-300 font-semibold hover:font-bold text-lg">
               Author
             </Link>
-            <Link href="/contact" className="text-gray-800 hover:text-[#1a4280] transition-colors duration-300 font-bold text-lg">
+            <Link href="/contact" className="text-gray-800 hover:text-[#1a4280] hover:underline transition-colors duration-300 font-semibold hover:font-bold text-lg">
               Contact
             </Link>
           </nav>
@@ -66,16 +69,19 @@ export default function Header() {
           } overflow-hidden`}
         >
           <nav className="py-4 space-y-4 flex flex-col items-center">
-            <Link href="/" className="block text-gray-800 hover:text-[#1a4280] transition-colors duration-300 font-bold text-[18px]">
+            <Link href="/" className="block text-gray-800 hover:text-[#1a4280] hover:underline transition-colors duration-300 font-bold text-[18px]">
               Home
             </Link>
-            <Link href="/book" className="block text-gray-800 hover:text-[#1a4280] transition-colors duration-300 font-bold text-[18px]">
+            <Link href="/book" className="block text-gray-800 hover:text-[#1a4280] hover:underline transition-colors duration-300 font-bold text-[18px]">
               Book
             </Link>
-            <Link href="/author" className="block text-gray-800 hover:text-[#1a4280] transition-colors duration-300 font-bold text-[18px]">
+            <Link href="/pre-order" className="block text-gray-800 hover:text-[#1a4280] hover:underline transition-colors duration-300 font-bold text-[18px]">
+              Pre-Order
+            </Link>
+            <Link href="/author" className="block text-gray-800 hover:text-[#1a4280] hover:underline transition-colors duration-300 font-bold text-[18px]">
               Author
             </Link>
-            <Link href="/contact" className="block text-gray-800 hover:text-[#1a4280] transition-colors duration-300 font-bold text-[18px]">
+            <Link href="/contact" className="block text-gray-800 hover:text-[#1a4280] hover:underline transition-colors duration-300 font-bold text-[18px]">
               Contact
             </Link>
             <button className="bg-gradient-to-r from-[#1a4280] to-[#6989b0] text-white px-8 py-4 font-semibold rounded-full hover:shadow-lg transition-all duration-300 transform hover:scale-105 whitespace-nowrap cursor-pointer">

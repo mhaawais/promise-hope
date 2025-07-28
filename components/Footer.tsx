@@ -63,7 +63,7 @@ export default function Footer() {
                 <li>
                   <Link
                     href="/"
-                    className="text-white/80 font-medium hover:font-bold hover:text-black transition-colors duration-300"
+                    className="text-white/80 font-medium hover:font-bold hover:underline hover:text-black transition-colors duration-300"
                   >
                     Home
                   </Link>
@@ -71,15 +71,23 @@ export default function Footer() {
                 <li>
                   <Link
                     href="/book"
-                    className="text-white/80 font-medium hover:font-bold hover:text-black transition-colors duration-300"
+                    className="text-white/80 font-medium hover:font-bold hover:underline hover:text-black transition-colors duration-300"
                   >
                     Book
+                  </Link>
+                </li>
+                 <li>
+                  <Link
+                    href="/pre-order"
+                    className="text-white/80 font-medium hover:font-bold hover:underline hover:text-black transition-colors duration-300"
+                  >
+                    Pre-Order
                   </Link>
                 </li>
                 <li>
                   <Link
                     href="/author"
-                    className="text-white/80 font-medium hover:font-bold hover:text-black transition-colors duration-300"
+                    className="text-white/80 font-medium hover:font-bold hover:underline hover:text-black transition-colors duration-300"
                   >
                     Author
                   </Link>
@@ -87,7 +95,7 @@ export default function Footer() {
                 <li>
                   <Link
                     href="/contact"
-                    className="text-white/80 font-medium hover:font-bold hover:text-black transition-colors duration-300"
+                    className="text-white/80 font-medium hover:font-bold hover:underline hover:text-black transition-colors duration-300"
                   >
                     Contact
                   </Link>

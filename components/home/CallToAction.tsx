@@ -7,8 +7,9 @@ export default function CallToAction() {
       <div 
         className="absolute inset-0 bg-cover bg-center"
         style={{
-          backgroundImage: `url('https://readdy.ai/api/search-image?query=Elegant%20reading%20nook%20with%20comfortable%20armchair%2C%20warm%20golden%20lighting%2C%20books%20scattered%20around%2C%20cozy%20literary%20atmosphere%2C%20soft%20focus%20background%2C%20dreamy%20book%20lover%20environment%2C%20sophisticated%20interior%20design&width=1920&height=800&seq=cta1&orientation=landscape')`
-        }}
+        //  backgroundImage: `url('https://readdy.ai/api/search-image?query=Elegant%20reading%20nook%20with%20comfortable%20armchair%2C%20warm%20golden%20lighting%2C%20books%20scattered%20around%2C%20cozy%20literary%20atmosphere%2C%20soft%20focus%20background%2C%20dreamy%20book%20lover%20environment%2C%20sophisticated%20interior%20design&width=1920&height=800&seq=cta1&orientation=landscape')`
+            backgroundImage: `url("assets/images/pic-3.jpg")`,  
+      }}
       >
         <div className="absolute inset-0 bg-gradient-to-r from-[#1a4280]/90 to-[#6989b0]/80"></div>
       </div>

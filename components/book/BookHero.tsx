@@ -12,10 +12,11 @@ export default function BookHero() {
       <div 
         className="absolute inset-0 bg-cover bg-center"
         style={{
-          backgroundImage: `url('https://readdy.ai/api/search-image?query=Elegant%20library%20interior%20with%20floating%20books%2C%20magical%20literary%20atmosphere%2C%20warm%20golden%20lighting%2C%20sophisticated%20book%20lover%20environment%2C%20dreamy%20reading%20nook%20with%20soft%20blue%20and%20gold%20tones&width=1920&height=1080&seq=bookhero1&orientation=landscape')`
-        }}
+       //   backgroundImage: `url('https://readdy.ai/api/search-image?query=Elegant%20library%20interior%20with%20floating%20books%2C%20magical%20literary%20atmosphere%2C%20warm%20golden%20lighting%2C%20sophisticated%20book%20lover%20environment%2C%20dreamy%20reading%20nook%20with%20soft%20blue%20and%20gold%20tones&width=1920&height=1080&seq=bookhero1&orientation=landscape')`
+          backgroundImage: `url("/assets/images/pic-4.jpg")`,
+      }}
       >
-        <div className="absolute inset-0 bg-gradient-to-r from-[#1a4280]/90 to-[#6989b0]/70"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-[#1a4280]/80 to-[#6989b0]/50"></div>
       </div>
 
       {/* Content */}
@@ -26,17 +27,18 @@ export default function BookHero() {
             <div className="relative group">
               <div className="relative transform transition-all duration-500 group-hover:scale-105">
                 <Image
-                  src="/assets/images/half.jpg"
+                  src="/assets/images/full.JPG"
                  // src={`https://readdy.ai/api/search-image?query=Professional%20bestselling%20book%20cover%20design%2C%20elegant%20literary%20fiction%20cover%20with%20sophisticated%20typography%2C%20deep%20blue%20and%20gold%20color%20scheme%2C%20award-winning%20book%20design%2C%20premium%20quality%20mockup&width=400&height=600&seq=mainbook1&orientation=portrait`}                
                   alt="The Journey Within Book Cover"
                   width={400}
                   height={400}
-                  className={`w-80 h-auto rounded-lg shadow-2xl transition-all duration-500 ${showFullCover ? 'opacity-0' : 'opacity-100'}`}
+                  className={`h-auto w-auto rounded-lg shadow-2xl transition-all duration-500 ${showFullCover ? 'opacity-0' : 'opacity-100'}`}
                 />
                 {showFullCover && (
                   <Image
-                    src={`https://readdy.ai/api/search-image?query=Complete%20book%20cover%20showing%20front%20and%20back%20covers%2C%20full%20spine%20view%2C%20professional%20book%20mockup%20with%20both%20sides%20visible%2C%20elegant%20literary%20design%20with%20consistent%20typography&width=600&height=400&seq=mainbookfull1&orientation=landscape`}
-                    alt="Full Book Cover"
+                  //  src={`https://readdy.ai/api/search-image?query=Complete%20book%20cover%20showing%20front%20and%20back%20covers%2C%20full%20spine%20view%2C%20professional%20book%20mockup%20with%20both%20sides%20visible%2C%20elegant%20literary%20design%20with%20consistent%20typography&width=600&height=400&seq=mainbookfull1&orientation=landscape`}
+                      src = "/assets/images/full.JPG"  
+                  alt="Full Book Cover"
                     width={400}
                     height={400}
                     className="absolute inset-0 w-full h-auto rounded-lg shadow-2xl opacity-100 transition-all duration-500"

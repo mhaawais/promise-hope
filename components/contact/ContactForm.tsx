@@ -1,47 +1,95 @@
-'use client';
+"use client";
 
-import { useState } from 'react';
+import React, { useState, FormEvent, ChangeEvent } from "react";
 
 export default function ContactForm() {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    subject: '',
-    message: ''
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
   });
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitStatus, setSubmitStatus] = useState('');
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState("");
+
+  // const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+  //   setFormData({
+  //     ...formData,
+  //     [e.target.name]: e.target.value
+  //   });
+  // };
+
+  // const handleSubmit = async (e: React.FormEvent) => {
+  //   e.preventDefault();
+
+  //   if (!formData.name || !formData.email || !formData.message) {
+  //     setSubmitStatus('Please fill in all required fields.');
+  //     return;
+  //   }
+
+  //   if (formData.message.length > 500) {
+  //     setSubmitStatus('Message must be 500 characters or less.');
+  //     return;
+  //   }
+
+  //   setIsSubmitting(true);
+  //   setSubmitStatus('');
+
+  //   try {
+  //     // Simulate form submission
+  //     await new Promise(resolve => setTimeout(resolve, 1500));
+  //     setSubmitStatus('Thank you for your message! I\'ll get back to you soon.');
+  //     setFormData({ name: '', email: '', subject: '', message: '' });
+  //   // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  //   } catch (error) {
+  //     setSubmitStatus('Something went wrong. Please try again.');
+  //   } finally {
+  //     setIsSubmitting(false);
+  //   }
+  // };
+
+  // const [status, setStatus] = useState("");
+
+  const handleChange = (
+    e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
+  ) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    
-    if (!formData.name || !formData.email || !formData.message) {
-      setSubmitStatus('Please fill in all required fields.');
-      return;
-    }
-    
-    if (formData.message.length > 500) {
-      setSubmitStatus('Message must be 500 characters or less.');
+
+    if (!formData.email.includes("@")) {
+      setSubmitStatus("Please enter a valid email address.");
       return;
     }
 
+    // setStatus("Sending...");
     setIsSubmitting(true);
-    setSubmitStatus('');
+    setSubmitStatus("Sending...");
 
     try {
-      // Simulate form submission
-      await new Promise(resolve => setTimeout(resolve, 1500));
-      setSubmitStatus('Thank you for your message! I\'ll get back to you soon.');
-      setFormData({ name: '', email: '', subject: '', message: '' });
+      const response = await fetch("https://formspree.io/f/manjggnq", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        setSubmitStatus(
+          "Thank you for your message! I'll get back to you soon."
+        );
+        setFormData({ name: "", email: "", subject: "", message: "" });
+      } else {
+        setSubmitStatus("Failed to send message. Please try again.");
+      }
     } catch (error) {
-      setSubmitStatus('Something went wrong. Please try again.');
+      console.error("Form submission failed:", error);
+      setSubmitStatus("An error occurred. Please try again later.");
     } finally {
       setIsSubmitting(false);
     }
@@ -50,10 +98,13 @@ export default function ContactForm() {
   return (
     <div className="bg-white rounded-2xl shadow-xl p-8">
       <h2 className="text-3xl font-bold text-[#1a4280] mb-6">Send a Message</h2>
-      
+
       <form id="contact-form" onSubmit={handleSubmit} className="space-y-6">
         <div>
-          <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
+          <label
+            htmlFor="name"
+            className="block text-sm font-medium text-gray-700 mb-2"
+          >
             Name *
           </label>
           <input
@@ -69,7 +120,10 @@ export default function ContactForm() {
         </div>
 
         <div>
-          <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
+          <label
+            htmlFor="email"
+            className="block text-sm font-medium text-gray-700 mb-2"
+          >
             Email *
           </label>
           <input
@@ -84,11 +138,15 @@ export default function ContactForm() {
           />
         </div>
 
-        <div>
-          <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-2">
+        {/* <div>
+          <label
+            htmlFor="subject"
+            className="block text-sm font-medium text-gray-700 mb-2"
+          >
             Subject
           </label>
           <select
+            type="text"
             id="subject"
             name="subject"
             value={formData.subject}
@@ -103,10 +161,32 @@ export default function ContactForm() {
             <option value="writing-advice">Writing Advice</option>
             <option value="other">Other</option>
           </select>
-        </div>
+        </div> */}
+
+        {/* <div>
+          <label
+            htmlFor="subject"
+            className="block text-sm font-medium text-gray-700 mb-2"
+          >
+            Subject *
+          </label>
+          <input
+            type="text"
+            id="subject"
+            name="subject"
+            value={formData.subject}
+            onChange={handleChange}
+            required
+            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#1a4280] focus:border-transparent transition-all duration-300"
+            placeholder="Enter the subject of your message"
+          />
+        </div> */}
 
         <div>
-          <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
+          <label
+            htmlFor="message"
+            className="block text-sm font-medium text-gray-700 mb-2"
+          >
             Message *
           </label>
           <textarea
@@ -144,11 +224,13 @@ export default function ContactForm() {
         </button>
 
         {submitStatus && (
-          <div className={`text-center p-4 rounded-lg ${
-            submitStatus.includes('Thank you') 
-              ? 'bg-green-50 text-green-700' 
-              : 'bg-red-50 text-red-700'
-          }`}>
+          <div
+            className={`text-center p-4 rounded-lg ${
+              submitStatus.includes("Thank you")
+                ? "bg-green-50 text-green-700"
+                : "bg-red-50 text-red-700"
+            }`}
+          >
             {submitStatus}
           </div>
         )}
