@@ -3,7 +3,7 @@ import Footer from '@/components/Footer';
 import HeroSection from '@/components/home/HeroSection';
 import FeaturedBook from '@/components/home/FeaturedBook';
 import AboutAuthor from '@/components/home/AboutAuthor';
-import ReviewsSection from '@/components/home/ReviewsSection';
+// import ReviewsSection from '@/components/home/ReviewsSection';
 import CallToAction from '@/components/home/CallToAction';
 import type { Metadata } from 'next';
 
@@ -19,7 +19,7 @@ export default function Home() {
       <HeroSection />
       <FeaturedBook />
       <AboutAuthor />
-      <ReviewsSection />
+      {/* <ReviewsSection /> */}
       <CallToAction />
       <Footer />
     </div>

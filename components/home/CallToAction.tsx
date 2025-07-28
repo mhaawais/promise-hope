@@ -26,7 +26,7 @@ export default function CallToAction() {
           </p>
 
           {/* Special Offer */}
-          <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 mb-8 border border-white/20">
+          {/* <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 mb-8 border border-white/20">
             <div className="flex items-center justify-center mb-4">
               <i className="ri-fire-line text-orange-400 text-2xl mr-2"></i>
               <span className="text-white font-semibold text-lg">Limited Time Offer</span>
@@ -36,7 +36,7 @@ export default function CallToAction() {
               <span className="ml-4 text-yellow-400">$24.99</span>
             </div>
             <p className="text-white/80">Save 33% - Offer ends in 7 days</p>
-          </div>
+          </div> */}
 
           {/* Action Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
@@ -44,27 +44,32 @@ export default function CallToAction() {
               <i className="ri-shopping-cart-line mr-2"></i>
               Get Your Copy Now
             </button>
-            <button className="bg-white/20 backdrop-blur-sm text-white px-12 py-4 rounded-full text-lg font-semibold hover:bg-[#1a4280] transition-all duration-300 border border-white/30 whitespace-nowrap cursor-pointer">
+            {/* <button className="bg-white/20 backdrop-blur-sm text-white px-12 py-4 rounded-full text-lg font-semibold hover:bg-[#1a4280] transition-all duration-300 border border-white/30 whitespace-nowrap cursor-pointer">
               <i className="ri-gift-line mr-2"></i>
               Gift to Someone
-            </button>
+            </button> */}
           </div>
 
           {/* Trust Indicators */}
-          <div className="flex flex-wrap justify-center items-center gap-8 text-white/80">
+          {/* <div className="flex flex-wrap justify-center items-center gap-8 text-white/80">
+
             <div className="flex items-center">
               <i className="ri-shield-check-line text-green-400 text-xl mr-2"></i>
               <span>30-Day Money Back Guarantee</span>
             </div>
+
             <div className="flex items-center">
               <i className="ri-truck-line text-blue-400 text-xl mr-2"></i>
               <span>Free Worldwide Shipping</span>
             </div>
+
             <div className="flex items-center">
               <i className="ri-heart-line text-red-400 text-xl mr-2"></i>
               <span>Loved by 50K+ Readers</span>
             </div>
-          </div>
+
+          </div> */}
+
         </div>
       </div>
 

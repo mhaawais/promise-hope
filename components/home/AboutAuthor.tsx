@@ -1,9 +1,6 @@
 'use client';
 
-import Link from 'next/link';
 import Image from 'next/image';
-import { RiAwardLine, RiBookLine, RiUserHeartLine, RiGlobalLine, RiUserLine } from 'react-icons/ri';
-import { FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa";
 
 export default function AboutAuthor() {
   return (
@@ -49,7 +46,7 @@ export default function AboutAuthor() {
             </p>
 
             {/* Achievements */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            {/* <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div className="bg-white p-4 rounded-lg shadow-md transition-all transform hover:scale-105">
                 <div className="flex items-center mb-2">
                   <RiAwardLine className="text-[#1a4280] text-xl mr-2" />
@@ -78,10 +75,10 @@ export default function AboutAuthor() {
                 </div>
                 <p className="text-gray-700">12 Translations</p>
               </div>
-            </div>
+            </div> */}
 
             {/* Social Links */}
-            <div className="flex items-center space-x-4">
+            {/* <div className="flex items-center space-x-4">
               <span className="text-gray-500">Follow the author:</span>
               <div className="flex space-x-3">
                 <a href="#" className="w-8 h-8 sm:w-10 sm:h-10 bg-white rounded-full flex items-center justify-center hover:bg-gray-500 transition-all duration-300">
@@ -94,15 +91,15 @@ export default function AboutAuthor() {
                   <FaFacebook className='text-2xl text-blue-600 font-bold'/>
                 </a>
               </div>
-            </div>
+            </div> */}
 
             {/* Learn More Button */}
-            <Link href="/author">
+            {/* <Link href="/author">
               <button className="bg-gradient-to-r from-[#1a4280] to-[#6989b0] text-white px-4 sm:px-8 py-2 sm:py-3 rounded-full hover:shadow-xl transition-all duration-300 transform hover:scale-105 font-semibold whitespace-nowrap cursor-pointer">
                 <RiUserLine className="mr-2" />
                 Learn More About the Author
               </button>
-            </Link>
+            </Link> */}
           </div>
         </div>
       </div>

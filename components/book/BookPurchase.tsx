@@ -3,15 +3,15 @@
 import { useState } from 'react';
 import Image from 'next/image';
 
-export default function BookPurchase() {
+export default function BookPurchase() {                               
   const [selectedFormat, setSelectedFormat] = useState('hardcover');
   const [quantity, setQuantity] = useState(1);
 
   const formats = [
-    { id: 'hardcover', name: 'Hardcover', price: 29.99, description: 'Premium hardcover edition' },
-    { id: 'paperback', name: 'Paperback', price: 24.99, description: 'Standard paperback edition' },
-    { id: 'ebook', name: 'E-book', price: 12.99, description: 'Digital edition for all devices' },
-    { id: 'audiobook', name: 'Audiobook', price: 19.99, description: 'Narrated by professional voice actor' },
+    { id: 'hardcover', name: 'Hardcover', price: 29.99, description: 'Premium hardcover edition', image: '/assets/images/Hardcover.png' },
+    { id: 'paperback', name: 'Paperback', price: 24.99, description: 'Standard paperback edition', image: '/assets/images/paperback.png' },
+    { id: 'ebook', name: 'E-book', price: 12.99, description: 'Digital edition for all devices', image: '/assets/images/ebook.png' },
+    // { id: 'audiobook', name: 'Audiobook', price: 19.99, description: 'Narrated by professional voice actor' },
   ];
 
   const selectedFormatData = formats.find((f) => f.id === selectedFormat);
@@ -27,7 +27,7 @@ export default function BookPurchase() {
           </div>
 
           {/* Responsive image container */}
-          <div className="flex justify-center mb-12">
+          {/* <div className="flex justify-center mb-12">
             <div className="border-4 border-black p-2 sm:p-4 rounded-lg bg-black max-w-full w-full sm:w-[400px] md:w-[500px] lg:w-[600px]">
               
               <Image               
@@ -39,10 +39,10 @@ export default function BookPurchase() {
               />
 
             </div>
-          </div>
+          </div> */}
 
           <div className="bg-white rounded-2xl shadow-xl p-6 sm:p-8">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <div className="grid grid-cols-1 lg:grid-cols-1 gap-8">
               {/* Purchase Options */}
               <div>
                 <h3 className="text-2xl font-bold text-[#1a4280] mb-6">Choose Format</h3>
@@ -67,11 +67,18 @@ export default function BookPurchase() {
                       />
                       <div className="flex justify-between items-center">
                         <div>
-                          <div className="font-semibold text-[#1a4280]">{format.name}</div>
-                          <div className="text-sm text-gray-600">{format.description}</div>
+                          <p className="font-semibold text-[#1a4280]">{format.name}</p>
+                          <p className="text-sm text-gray-600">{format.description}</p>
                         </div>
-                        <div className="text-xl font-bold text-[#1a4280]">${format.price}</div>
+                        <p className="text-xl font-bold text-[#1a4280]">${format.price}</p>
                       </div>
+                       <Image
+                            src={format.image}
+                            alt={format.name}
+                            width={600}
+                            height={600}
+                            className="object-cover rounded-sm mt-2 w-full"
+                          />
                     </label>
                   ))}
                 </div>
@@ -180,6 +187,20 @@ export default function BookPurchase() {
     </section>
   );
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

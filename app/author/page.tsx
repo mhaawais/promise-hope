@@ -3,7 +3,7 @@ import Footer from '@/components/Footer';
 import AuthorHero from '@/components/author/AuthorHero';
 import AuthorBio from '@/components/author/AuthorBio';
 import AuthorGallery from '@/components/author/AuthorGallery';
-import AuthorBooks from '@/components/author/AuthorBooks';
+// import AuthorBooks from '@/components/author/AuthorBooks';
 import AuthorAchievements from '@/components/author/AuthorAchievements';
 import type { Metadata } from 'next';
 
@@ -19,7 +19,7 @@ export default function AuthorPage() {
       <AuthorHero />
       <AuthorBio />
       <AuthorGallery />
-      <AuthorBooks />
+      {/* <AuthorBooks /> */}
       <AuthorAchievements />
       <Footer />
     </div>

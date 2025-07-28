@@ -68,7 +68,7 @@ export default function ContactInfo() {
       </div>
 
       {/* FAQ */}
-      <div className="bg-white rounded-2xl shadow-xl p-8">
+      {/* <div className="bg-white rounded-2xl shadow-xl p-8">
         <h3 className="text-2xl font-bold text-[#1a4280] mb-6">Frequently Asked Questions</h3>
         
         <div className="space-y-4">
@@ -92,10 +92,10 @@ export default function ContactInfo() {
             <p className="text-gray-600 text-sm">I typically respond to messages within 2-3 business days. For urgent matters, please indicate so in your subject line.</p>
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* Office Hours */}
-      <div className="bg-gradient-to-r from-[#1a4280] to-[#6989b0] rounded-2xl p-8 text-white">
+      {/* <div className="bg-gradient-to-r from-[#1a4280] to-[#6989b0] rounded-2xl p-8 text-white">
         <h3 className="text-2xl font-bold mb-4">Office Hours</h3>
         <div className="space-y-2">
           <div className="flex justify-between">
@@ -114,7 +114,7 @@ export default function ContactInfo() {
         <p className="text-white/80 text-sm mt-4">
           For urgent matters outside these hours, please indicate in your message and I&apos;ll respond as soon as possible.
         </p>
-      </div>
-    </div>
+      </div> */}
+    </div> 
   );
 }

@@ -8,9 +8,9 @@ export default function BookDetails() {
 
   const tabs = [
     { id: 'synopsis', label: 'Synopsis', icon: 'ri-book-open-line' },
-    { id: 'author', label: 'About Author', icon: 'ri-user-line' },
-    { id: 'details', label: 'Book Details', icon: 'ri-information-line' },
-    { id: 'reviews', label: 'Reviews', icon: 'ri-star-line' }
+    // { id: 'author', label: 'About Author', icon: 'ri-user-line' },
+    // { id: 'details', label: 'Book Details', icon: 'ri-information-line' },
+    // { id: 'reviews', label: 'Reviews', icon: 'ri-star-line' }
   ];
 
   return (
@@ -23,7 +23,7 @@ export default function BookDetails() {
               <button
                 key={tab.id}
                 onClick={() => setActiveTab(tab.id)}
-                className={`px-6 py-3 m-1 rounded-full transition-all duration-300 cursor-pointer ${
+                className={`px-10 py-3 m-1 rounded-full transition-all duration-300 cursor-pointer ${
                   activeTab === tab.id
                     ? 'bg-gradient-to-r from-[#1a4280] to-[#6989b0] text-white shadow-lg transform scale-105'
                     : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
