@@ -153,7 +153,7 @@ export default function AuthorAchievements() {
               </div>
               <p className="text-gray-700 italic leading-relaxed">
                 &quot;Jacob Ken Robinson writes with a profound understanding of the human condition. 
-                Her ability to capture complex emotions in simple, beautiful prose is extraordinary.&quot;
+                His ability to capture complex emotions in simple, beautiful prose is extraordinary.&quot;
               </p>
             </div>
             
@@ -183,10 +183,10 @@ export default function AuthorAchievements() {
         <div className="bg-gradient-to-r from-[#1a4280] to-[#6989b0] rounded-2xl p-8 mt-16 text-center text-white">
           <h3 className="text-3xl font-bold mb-4">What&apos;s Next?</h3>
           <p className="text-xl mb-6">
-            Jacob is currently working on her next novel, expected to be released in th end of 2025. 
-            Stay tuned for updates on her upcoming literary projects and events.
+            Jacob is currently working on his next novel, expected to be released in the end of 2025. 
+            Stay tuned for updates on his upcoming literary projects and events.
           </p>
-          <button className="bg-white text-[#1a4280] px-8 py-3 rounded-full hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 font-semibold cursor-pointer">
+          <button className="bg-white text-[#1a4280] px-8 py-3 rounded-full hover:bg-[#1a4280] hover:text-white transition-all duration-300 transform hover:scale-105 font-semibold cursor-pointer">
             <i className="ri-notification-line mr-2"></i>
             Follow me
           </button>

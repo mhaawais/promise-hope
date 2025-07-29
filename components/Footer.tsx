@@ -29,25 +29,33 @@ export default function Footer() {
             </p>
             <div className="flex space-x-4 justify-center md:justify-start">
               <a
-                href="#"
+                href="https://www.facebook.com/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-10 h-10 bg-white hover:bg-black rounded-full flex items-center justify-center transition-colors duration-300 cursor-pointer"
               >
                 <FaFacebook className="text-blue-600 text-2xl" />
               </a>
               <a
-                href="#"
+                href="https://www.twitter.com/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-10 h-10 bg-white rounded-full flex items-center justify-center hover:bg-black transition-colors duration-300 cursor-pointer"
               >
                 <FaTwitter className="text-blue-400 text-2xl" />
               </a>
               <a
-                href="#"
+                href="https://www.instagram.com/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-10 h-10 bg-white rounded-full flex items-center justify-center hover:bg-black transition-colors duration-300 cursor-pointer"
               >
                 <FaInstagram className="text-pink-700 text-2xl" />
               </a>
               <a
-                href="#"
+                href="https://www.linkedin.com/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-10 h-10 bg-white rounded-full flex items-center justify-center hover:bg-black transition-colors duration-300 cursor-pointer"
               >
                 <FaLinkedin className="text-blue-800 text-2xl" />

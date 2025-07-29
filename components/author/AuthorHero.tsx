@@ -85,25 +85,33 @@ export default function AuthorHero() {
               <span className="text-white/80">Follow me:</span>
               <div className="flex space-x-3">
                 <a
-                  href="#"
+                  href="https://www.twitter.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="w-12 h-12 bg-white rounded-full flex items-center justify-center hover:bg-black transition-all duration-300 transform hover:scale-110 cursor-pointer"
                 >
                   <FaTwitter className="text- text-2xl text-blue-400" />
                 </a>
                 <a
-                  href="#"
+                  href="https://www.instagram.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="w-12 h-12 bg-white rounded-full flex items-center justify-center hover:bg-black transition-all duration-300 transform hover:scale-110 cursor-pointer"
                 >
                   <FaInstagram className=" text- text-2xl text-pink-700" />
                 </a>
                 <a
-                  href="#"
+                  href="https://www.facebook.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="w-12 h-12 bg-white rounded-full flex items-center justify-center hover:bg-black transition-all duration-300 transform hover:scale-110 cursor-pointer"
                 >
                   <FaFacebook className=" text- text-2xl text-blue-600" />
                 </a>
                 <a
-                  href="#"
+                  href="https://www.linkedin.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="w-12 h-12 bg-white rounded-full flex items-center justify-center hover:bg-black transition-all duration-300 transform hover:scale-110 cursor-pointer"
                 >
                   <FaLinkedin className=" text- text-2xl text-blue-800" />

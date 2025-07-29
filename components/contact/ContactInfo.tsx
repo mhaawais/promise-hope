@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 export default function ContactInfo() {
   return (
@@ -6,7 +6,7 @@ export default function ContactInfo() {
       {/* Contact Details */}
       <div className="bg-white rounded-2xl shadow-xl p-8">
         <h2 className="text-3xl font-bold text-[#1a4280] mb-6">Get in Touch</h2>
-        
+
         <div className="space-y-6">
           <div className="flex items-center">
             <div className="w-12 h-12 bg-gradient-to-r from-[#1a4280] to-[#6989b0] rounded-full flex items-center justify-center mr-4">
@@ -14,27 +14,44 @@ export default function ContactInfo() {
             </div>
             <div>
               <h3 className="font-semibold text-[#1a4280]">Email</h3>
-              <p className="text-gray-600">info@jacobkenrobinson.com</p>
+              <a
+                href="mailto:info@jacobkenrobinson.com"
+                className="text-gray-600 hover:underline break-all"
+              >
+                info@jacobkenrobinson.com
+              </a>
             </div>
           </div>
-          
+
           <div className="flex items-center">
             <div className="w-12 h-12 bg-gradient-to-r from-[#1a4280] to-[#6989b0] rounded-full flex items-center justify-center mr-4">
               <i className="ri-phone-line text-white text-xl"></i>
             </div>
             <div>
               <h3 className="font-semibold text-[#1a4280]">Phone</h3>
-              <p className="text-gray-600">+1 (555) 123-4567</p>
+              <a
+                href="tel:2175209236"
+                className="text-gray-600 hover:underline"
+              >
+                (217) 520‑9236
+              </a>
             </div>
           </div>
-          
+
           <div className="flex items-center">
             <div className="w-12 h-12 bg-gradient-to-r from-[#1a4280] to-[#6989b0] rounded-full flex items-center justify-center mr-4">
               <i className="ri-map-pin-line text-white text-xl"></i>
             </div>
             <div>
               <h3 className="font-semibold text-[#1a4280]">Location</h3>
-              <p className="text-gray-600">WA</p>
+              <a
+                href="https://www.google.com/maps/place/Illinois"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-600 hover:underline"
+              >
+                Illinois
+              </a>
             </div>
           </div>
         </div>
@@ -43,24 +60,44 @@ export default function ContactInfo() {
       {/* Social Media */}
       <div className="bg-white rounded-2xl shadow-xl p-8">
         <h3 className="text-2xl font-bold text-[#1a4280] mb-6">Follow Me</h3>
-        
+
         <div className="grid grid-cols-2 gap-4">
-          <a href="#" className="flex items-center p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors duration-300 cursor-pointer">
+          <a
+            href="https://www.twitter.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center p-4 bg-gray-200 rounded-lg hover:bg-gray-300 transition-colors duration-300 cursor-pointer"
+          >
             <i className="ri-twitter-fill text-blue-500 text-2xl mr-3"></i>
             <span className="font-medium">Twitter</span>
           </a>
-          
-          <a href="#" className="flex items-center p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors duration-300 cursor-pointer">
+
+          <a
+            href="https://www.instagram.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center p-4 bg-gray-200 rounded-lg hover:bg-gray-300 transition-colors duration-300 cursor-pointer"
+          >
             <i className="ri-instagram-fill text-pink-500 text-2xl mr-3"></i>
             <span className="font-medium">Instagram</span>
           </a>
-          
-          <a href="#" className="flex items-center p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors duration-300 cursor-pointer">
+
+          <a
+            href="https://www.facebook.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center p-4 bg-gray-200 rounded-lg hover:bg-gray-300 transition-colors duration-300 cursor-pointer"
+          >
             <i className="ri-facebook-fill text-blue-600 text-2xl mr-3"></i>
             <span className="font-medium">Facebook</span>
           </a>
-          
-          <a href="#" className="flex items-center p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors duration-300 cursor-pointer">
+
+          <a
+            href="https://www.linkedin.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center p-4 bg-gray-200 rounded-lg hover:bg-gray-300 transition-colors duration-300 cursor-pointer"
+          >
             <i className="ri-linkedin-fill text-blue-700 text-2xl mr-3"></i>
             <span className="font-medium">LinkedIn</span>
           </a>
@@ -115,6 +152,6 @@ export default function ContactInfo() {
           For urgent matters outside these hours, please indicate in your message and I&apos;ll respond as soon as possible.
         </p>
       </div> */}
-    </div> 
+    </div>
   );
 }
