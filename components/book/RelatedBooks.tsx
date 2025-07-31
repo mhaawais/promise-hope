@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 'use client';
 
 export default function RelatedBooks() {
@@ -52,6 +53,7 @@ export default function RelatedBooks() {
           {relatedBooks.map((book) => (
             <div key={book.id} className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:scale-105">
               <div className="relative">
+               
                 <img
                   src={book.image}
                   alt={book.title}
@@ -94,7 +96,7 @@ export default function RelatedBooks() {
         {/* Author Collection CTA */}
         <div className="bg-gradient-to-r from-[#1a4280] to-[#6989b0] rounded-2xl p-8 mt-16 text-center text-white">
           <h3 className="text-3xl font-bold mb-4">Complete Collection</h3>
-          <p className="text-xl mb-6">Get all of Sarah Johnson's books in one special bundle</p>
+          <p className="text-xl mb-6">Get all of Sarah Johnson&apos;s books in one special bundle</p>
           <div className="flex items-center justify-center space-x-4 mb-6">
             <span className="text-2xl font-bold line-through text-white/70">$89.96</span>
             <span className="text-3xl font-bold text-yellow-400">$59.99</span>

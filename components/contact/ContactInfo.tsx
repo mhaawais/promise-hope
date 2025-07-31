@@ -20,6 +20,15 @@ export default function ContactInfo() {
               >
                 info@jacobkenrobinson.com
               </a>
+              <br />
+              <span className="text-sm text-gray-500">or</span>
+              <br />
+               <a
+                href="mailto:suitman49@gmail.com"
+                className="text-gray-600 hover:underline break-all"
+              >
+                suitman49@gmail.com
+              </a>
             </div>
           </div>
 

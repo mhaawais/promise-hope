@@ -152,11 +152,12 @@ export default function BookPurchase() {
                     <i className="ri-shopping-cart-line mr-2"></i>
                     Grab Your Copy
                   </button> */}
-
+                  <a href="/nextstep">
                   <button className="w-full bg-gradient-to-r from-[#1a4280] to-[#6989b0] text-white py-4 rounded-full text-lg font-semibold hover:bg-yellow-500 transition-all duration-300 transform hover:scale-105 cursor-pointer">
                     <i className="ri-flashlight-line mr-2"></i>
                     Buy Now
                   </button>
+                  </a>
 
                   {/* <button className="w-full border-2 border-[#1a4280] text-[#1a4280] py-4 rounded-full text-lg font-semibold hover:bg-[#1a4280] hover:text-white transition-all duration-300 cursor-pointer">
                     <i className="ri-gift-line mr-2"></i>
@@ -166,6 +167,10 @@ export default function BookPurchase() {
 
                 {/* Trust Badges */}
                 <div className="mt-8 space-y-3">
+                   <div className="flex items-center text-lg text-gray-600 font-medium text-center">
+                    <i className="ri-hand-coin-line text-green-500 mr-2"></i>
+                    <span>Cash On Delivery</span>
+                  </div>
                   <div className="flex items-center text-sm text-gray-600">
                     <i className="ri-shield-check-line text-green-500 mr-2"></i>
                     <span>Secure checkout with SSL encryption</span>

@@ -33,10 +33,10 @@ export default function ContactHero() {
               </div>
               <h3 className="text-xl font-semibold mb-2">Email</h3>
               <a
-                href="mailto:info@jacobkenrobinson.com"
+                href="mailto:suitman49@gmail.com"
                 className="text-white/80 hover:underline break-all"
               >
-                info@jacobkenrobinson.com
+                suitman49@gmail.com
               </a>
             </div>
 
