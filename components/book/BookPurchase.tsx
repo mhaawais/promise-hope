@@ -4,13 +4,13 @@ import { useState } from 'react';
 import Image from 'next/image';
 
 export default function BookPurchase() {                               
-  const [selectedFormat, setSelectedFormat] = useState('hardcover');
+  const [selectedFormat, setSelectedFormat] = useState('ebook');
   const [quantity, setQuantity] = useState(1);
 
   const formats = [
-    { id: 'hardcover', name: 'Hardcover', price: 29.99, description: 'Premium hardcover edition', image: '/assets/images/Hardcover-1.png' },
-    { id: 'paperback', name: 'Paperback', price: 24.99, description: 'Standard paperback edition', image: '/assets/images/paperback.png' },
     { id: 'ebook', name: 'E-book', price: 12.99, description: 'Digital edition for all devices', image: '/assets/images/ebook.png' },
+    { id: 'paperback', name: 'Paperback', price: 24.99, description: 'Standard paperback edition', image: '/assets/images/paperback.png' },
+    { id: 'hardcover', name: 'Hardcover', price: 29.99, description: 'Premium hardcover edition', image: '/assets/images/Hardcover-1.png' },
     // { id: 'audiobook', name: 'Audiobook', price: 19.99, description: 'Narrated by professional voice actor' },
   ];
 
@@ -67,7 +67,7 @@ export default function BookPurchase() {
                       />
                       <div className="flex justify-between items-center">
                         <div>
-                          <p className="font-semibold text-[#1a4280]">{format.name}</p>
+                          <p className="font-bold text-lg text-[#1a4280]">{format.name}</p>
                           <p className="text-sm text-gray-600">{format.description}</p>
                         </div>
                         <p className="text-xl font-bold text-[#1a4280]">${format.price}</p>
