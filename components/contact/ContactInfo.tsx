@@ -92,7 +92,7 @@ export default function ContactInfo() {
           </a>
 
           <a
-            href="https://www.facebook.com/"
+            href="https://www.facebook.com/profile.php?id=61579292437244"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center p-4 bg-gray-200 rounded-lg hover:bg-gray-300 transition-colors duration-300 cursor-pointer"

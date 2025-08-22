@@ -101,7 +101,7 @@ export default function AuthorHero() {
                   <FaInstagram className=" text- text-2xl text-pink-700" />
                 </a>
                 <a
-                  href="https://www.facebook.com/"
+                  href="https://www.facebook.com/profile.php?id=61579292437244"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-12 h-12 bg-white rounded-full flex items-center justify-center hover:bg-black transition-all duration-300 transform hover:scale-110 cursor-pointer"

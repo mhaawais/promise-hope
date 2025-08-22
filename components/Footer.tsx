@@ -29,7 +29,7 @@ export default function Footer() {
             </p>
             <div className="flex space-x-4 justify-center md:justify-start">
               <a
-                href="https://www.facebook.com/"
+                href="https://www.facebook.com/profile.php?id=61579292437244"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-white hover:bg-black rounded-full flex items-center justify-center transition-colors duration-300 cursor-pointer"
