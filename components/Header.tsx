@@ -43,6 +43,12 @@ export default function Header() {
             >
               Pre-Order
             </Link>
+             <Link
+              href="/blogs"
+              className="text-gray-800 hover:text-[#1a4280] hover:underline transition-colors duration-300 font-semibold hover:font-bold text-lg"
+            >
+              Blogs
+            </Link>
             <Link
               href="/author"
               className="text-gray-800 hover:text-[#1a4280] hover:underline transition-colors duration-300 font-semibold hover:font-bold text-lg"
@@ -107,6 +113,12 @@ export default function Header() {
               className="block text-gray-800 hover:text-[#1a4280] hover:underline transition-colors duration-300 font-bold text-[18px]"
             >
               Pre-Order
+            </Link>
+            <Link
+              href="/blogs"
+              className="block text-gray-800 hover:text-[#1a4280] hover:underline transition-colors duration-300 font-bold text-[18px]"
+            >
+              Blogs
             </Link>
             <Link
               href="/author"
