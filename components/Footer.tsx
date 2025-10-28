@@ -2,139 +2,179 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
+import {
+  FaFacebook,
+  FaTwitter,
+  FaInstagram,
+  FaLinkedin,
+  FaLocationArrow,
+  FaPhoneAlt,
+  FaEnvelope,
+  FaArrowUp,
+} from "react-icons/fa";
 
 export default function Footer() {
-  return (
-    <footer className="bg-gradient-to-r from-[#C6A15B] to-[#f59e0b] text-black">
-      <div className="container mx-auto px-4 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-          {/* Logo and Description        text-[#C6A15B] hover:text-[#6b7280]       */}
-          <div className="md:col-span-2 flex flex-col items-center md:items-start">
-            <Link href="/" className="flex items-center space-x-2 mb-4">
-              <div className="w-24 h-24 bg-white rounded-full flex items-center justify-center border-[8px] border-white">
-                <Image
-                  src="/assets/images/logo-2.JPG"
-                  alt="logo"
-                  width={100}
-                  height={100}
-                  className="object-contain"
-                />
-              </div>
-            </Link>
-            <p className="text-white/80 mb-6 max-w-md text-center md:text-left">
-              Discover captivating stories and profound insights from an
-              good author. Join thousands of readers on an
-              unforgettable literary journey.
-            </p>
-            <div className="flex space-x-4 justify-center md:justify-start">
-              <a
-                href="https://www.facebook.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-10 h-10 bg-white hover:bg-black rounded-full flex items-center justify-center transition-colors duration-300 cursor-pointer"
-              >
-                <FaFacebook className="text-blue-600 text-2xl" />
-              </a>
-              <a
-                href="https://www.twitter.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-10 h-10 bg-white rounded-full flex items-center justify-center hover:bg-black transition-colors duration-300 cursor-pointer"
-              >
-                <FaTwitter className="text-blue-400 text-2xl" />
-              </a>
-              <a
-                href="https://www.instagram.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-10 h-10 bg-white rounded-full flex items-center justify-center hover:bg-black transition-colors duration-300 cursor-pointer"
-              >
-                <FaInstagram className="text-pink-700 text-2xl" />
-              </a>
-              <a
-                href="https://www.linkedin.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-10 h-10 bg-white rounded-full flex items-center justify-center hover:bg-black transition-colors duration-300 cursor-pointer"
-              >
-                <FaLinkedin className="text-blue-800 text-2xl" />
-              </a>
-            </div>
-          </div>
+  const year = new Date().getFullYear();
 
-          {/* Quick Links */}
-          <div className="flex justify-center md:justify-start items-center">
-            <div>
-              <h3 className="text-lg font-semibold mb-4 text-center md:text-left">
-                Quick Links
-              </h3>
-              <ul className="space-y-2 text-center md:text-left">
-                <li>
-                  <Link
-                    href="/"
-                    className="text-white/80 font-medium hover:font-bold hover:underline hover:text-black transition-colors duration-300"
+  const scrollTop = () => window.scrollTo({ top: 0, behavior: "smooth" });
+
+  const social = [
+    { href: "https://www.facebook.com/", label: "Facebook", Icon: FaFacebook },
+    { href: "https://www.twitter.com/", label: "Twitter", Icon: FaTwitter },
+    { href: "https://www.instagram.com/", label: "Instagram", Icon: FaInstagram },
+    { href: "https://www.linkedin.com/", label: "LinkedIn", Icon: FaLinkedin },
+  ];
+
+  return (
+    <footer className="relative text-black">
+      {/* Decorative wave divider */}
+      <div aria-hidden className="select-none">
+        <svg
+          viewBox="0 0 1440 120"
+          className="w-full h-[80px] md:h-[120px] text-white"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M0,64L60,80C120,96,240,128,360,122.7C480,117,600,75,720,64C840,53,960,75,1080,85.3C1200,96,1320,96,1380,96L1440,96L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"
+            className="fill-white"
+          />
+        </svg>
+      </div>
+
+      {/* Gradient background matching logo (gold theme) */}
+      <div className="bg-gradient-to-r from-[#C6A15B] via-[#d4a24a] to-[#f59e0b] relative overflow-hidden">
+        <div
+          aria-hidden
+          className="pointer-events-none absolute inset-0 opacity-10"
+          style={{
+            backgroundImage:
+              "radial-gradient(currentColor 1px, transparent 1px), radial-gradient(currentColor 1px, transparent 1px)",
+            backgroundSize: "16px 16px",
+            backgroundPosition: "0 0, 8px 8px",
+            color: "#fff",
+          }}
+        />
+
+        <div className="container mx-auto px-4 py-16">
+          <div className="grid grid-cols-1 md:grid-cols-12 gap-10">
+            {/* Brand / About */}
+            <div className="md:col-span-6">
+              <Link href="/" className="flex items-center gap-3 mb-5">
+                <div className="relative w-16 h-16 rounded-full bg-white shadow ring-8 ring-white/30">
+                  <Image
+                    src="/assets/images/logo-2.JPG"
+                    alt="Promise Hope logo"
+                    fill
+                    className="object-contain p-2"
+                    sizes="64px"
+                    priority
+                  />
+                </div>
+                <span className="font-extrabold text-xl tracking-wide text-[#2e0101] drop-shadow">
+                  PROMISE&nbsp;HOPE
+                </span>
+                </Link>
+
+              <p className="text-white/85 leading-relaxed max-w-lg">
+                Discover captivating stories and heartfelt insights from a good author.
+                Join thousands of readers on an unforgettable literary journey.
+              </p>
+
+              {/* Socials */}
+              <div className="mt-6 flex gap-3">
+                {social.map(({ href, label, Icon }) => (
+                  <a
+                    key={label}
+                    href={href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={label}
+                    className="group w-10 h-10 rounded-full bg-white/95 hover:bg-black transition-colors grid place-items-center shadow-md"
                   >
-                    Home
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/book"
-                    className="text-white/80 font-medium hover:font-bold hover:underline hover:text-black transition-colors duration-300"
-                  >
-                    Book
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/About"
-                    className="text-white/80 font-medium hover:font-bold hover:underline hover:text-black transition-colors duration-300"
-                  >
-                    About
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/contact"
-                    className="text-white/80 font-medium hover:font-bold hover:underline hover:text-black transition-colors duration-300"
-                  >
-                    Contact
-                  </Link>
-                </li>
+                    <Icon className="text-xl text-[#996e20] group-hover:text-white transition-colors" />
+                  </a>
+                ))}
+              </div>
+            </div>
+
+            {/* Quick Links */}
+            <div className="md:col-span-3">
+              <h3 className="text-[#1a1a1a] font-bold text-lg mb-4">Quick Links</h3>
+              <ul className="space-y-2">
+                {[
+                  { href: "/", label: "Home" },
+                  { href: "/book", label: "Book" },
+                  { href: "/about", label: "About" },
+                  { href: "/contact", label: "Contact" },
+                ].map(({ href, label }) => (
+                  <li key={href}>
+                    <Link
+                      href={href}
+                      className="text-white/90 hover:text-black hover:underline underline-offset-4 transition-colors font-medium"
+                    >
+                      {label}
+                    </Link>
+                  </li>
+                ))}
               </ul>
             </div>
+
+            {/* Get Book CTA */}
+            <div className="md:col-span-3 flex flex-col justify-start items-center md:items-start">
+              <h3 className="text-[#1a1a1a] font-bold text-lg mb-4">Get the Book</h3>
+              <p className="text-white/85 mb-4 max-w-xs">
+                Start your inspiring journey today by grabbing your copy.
+              </p>
+              <a href="" target="_blank" rel="noopener noreferrer">
+                <button className="bg-white text-[#966a19] px-6 py-3 rounded-full font-semibold shadow hover:bg-black hover:text-white transition-all hover:scale-[1.03]">
+                  Get the Book
+                </button>
+              </a>
+            </div>
           </div>
 
-          {/* Get the Book Button */}
-          <div className="flex justify-center items-center">
-            <a
-              href=""
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <button className="bg-white text-[#1a4280] px-8 py-3 rounded-full hover:bg-[#6b7280] hover:text-white transition-all duration-300 transform hover:scale-105 font-semibold whitespace-nowrap cursor-pointer">
-                Get the Book
-              </button>
-            </a>
+          {/* Contact Strip */}
+          <div className="mt-12 rounded-2xl bg-white/90 backdrop-blur p-5 shadow-md">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 text-[#1a1a1a]">
+              <div className="flex items-center gap-3 justify-center sm:justify-start">
+                <FaLocationArrow className="text-xl text-[#C6A15B]" />
+                <p className="text-sm sm:text-base">
+                  123 Lit
+                </p>
+              </div>
+              <div className="flex items-center gap-3 justify-center sm:justify-start">
+                <FaPhoneAlt className="text-xl text-[#C6A15B]" />
+                <a href="tel:+12171112222" className="text-sm sm:text-base hover:underline">
+                  (217) 111‑2222
+                </a>
+              </div>
+              <div className="flex items-center gap-3 justify-center sm:justify-start">
+                <FaEnvelope className="text-xl text-[#C6A15B]" />
+                <a
+                  href="mailto:hello@promisehope.com"
+                  className="text-sm sm:text-base hover:underline"
+                >
+                  hello@promisehope.com
+                </a>
+              </div>
+            </div>
           </div>
-        </div>
 
-        {/* Bottom Section */}
-        <div className="border-t border-white/20 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-white/80 mb-4 md:mb-0 text-center md:text-left">
-            © 2025 Promise Hope. All rights reserved.
-          </p>
-          {/* <p className="text-sm">
-            Created by{" "}
-            <Link
-              href={"https://americanbookfounders.com/"}
-              target="_blank"
-              className="underline text-yellow-500 hover:text-green-500"
+          {/* Bottom bar */}
+          <div className="border-t border-white/30 mt-10 pt-6 flex flex-col md:flex-row items-center justify-between gap-4">
+            <p className="text-white/85 text-center md:text-left">
+              © {year} Promise Hope. All rights reserved.
+            </p>
+
+            <button
+              onClick={scrollTop}
+              aria-label="Scroll to top"
+              className="inline-flex items-center gap-2 bg-white text-[#C6A15B] px-4 py-2 rounded-full shadow hover:bg-black hover:text-white transition-colors"
             >
-              Americanbookfounders
-            </Link>
-          </p> */}
+              <FaArrowUp />
+              Top
+            </button>
+          </div>
         </div>
       </div>
     </footer>
