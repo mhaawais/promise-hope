@@ -97,7 +97,7 @@ export default function ContactForm() {
 
   return (
     <div className="bg-white rounded-2xl shadow-xl p-8">
-      <h2 className="text-3xl font-bold text-[#1a4280] mb-6">Send a Message</h2>
+      <h2 className="text-3xl font-bold text-[#C6A15B] mb-6">Send a Message</h2>
 
       <form id="contact-form" onSubmit={handleSubmit} className="space-y-6">
         <div>
@@ -114,7 +114,7 @@ export default function ContactForm() {
             value={formData.name}
             onChange={handleChange}
             required
-            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#1a4280] focus:border-transparent transition-all duration-300"
+            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#b6ab14] focus:border-transparent transition-all duration-300"
             placeholder="Your full name"
           />
         </div>
@@ -133,7 +133,7 @@ export default function ContactForm() {
             value={formData.email}
             onChange={handleChange}
             required
-            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#1a4280] focus:border-transparent transition-all duration-300"
+            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#b6ab14] focus:border-transparent transition-all duration-300"
             placeholder="your.email@example.com"
           />
         </div>
@@ -197,7 +197,7 @@ export default function ContactForm() {
             required
             rows={6}
             maxLength={500}
-            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#1a4280] focus:border-transparent transition-all duration-300 resize-none"
+            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#b6ab14] focus:border-transparent transition-all duration-300 resize-none"
             placeholder="Your message here..."
           />
           <div className="text-right text-sm text-gray-500 mt-1">
@@ -208,7 +208,7 @@ export default function ContactForm() {
         <button
           type="submit"
           disabled={isSubmitting}
-          className="w-full bg-gradient-to-r from-[#1a4280] to-[#6989b0] text-white py-3 rounded-lg font-semibold hover:shadow-lg transition-all duration-300 transform hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none cursor-pointer"
+          className="w-full bg-gradient-to-r from-[#C6A15B] to-[#f59e0b] text-white py-3 rounded-lg font-semibold hover:shadow-lg transition-all duration-300 transform hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none cursor-pointer"
         >
           {isSubmitting ? (
             <span className="flex items-center justify-center">

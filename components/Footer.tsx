@@ -6,15 +6,15 @@ import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <footer className="bg-gradient-to-r from-[#1a4280] to-[#6989b0] text-white">
+    <footer className="bg-gradient-to-r from-[#C6A15B] to-[#f59e0b] text-black">
       <div className="container mx-auto px-4 py-16">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-          {/* Logo and Description */}
+          {/* Logo and Description        text-[#C6A15B] hover:text-[#6b7280]       */}
           <div className="md:col-span-2 flex flex-col items-center md:items-start">
             <Link href="/" className="flex items-center space-x-2 mb-4">
               <div className="w-24 h-24 bg-white rounded-full flex items-center justify-center border-[8px] border-white">
                 <Image
-                  src="/assets/images/logo-1.JPG"
+                  src="/assets/images/logo-2.JPG"
                   alt="logo"
                   width={100}
                   height={100}
@@ -24,12 +24,12 @@ export default function Footer() {
             </Link>
             <p className="text-white/80 mb-6 max-w-md text-center md:text-left">
               Discover captivating stories and profound insights from an
-              award-winning author. Join thousands of readers on an
+              good author. Join thousands of readers on an
               unforgettable literary journey.
             </p>
             <div className="flex space-x-4 justify-center md:justify-start">
               <a
-                href="https://www.facebook.com/profile.php?id=61579292437244"
+                href="https://www.facebook.com/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-white hover:bg-black rounded-full flex items-center justify-center transition-colors duration-300 cursor-pointer"
@@ -88,18 +88,10 @@ export default function Footer() {
                 </li>
                 <li>
                   <Link
-                    href="/pre-order"
+                    href="/About"
                     className="text-white/80 font-medium hover:font-bold hover:underline hover:text-black transition-colors duration-300"
                   >
-                    Pre-Order
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/author"
-                    className="text-white/80 font-medium hover:font-bold hover:underline hover:text-black transition-colors duration-300"
-                  >
-                    Author
+                    About
                   </Link>
                 </li>
                 <li>
@@ -117,11 +109,11 @@ export default function Footer() {
           {/* Get the Book Button */}
           <div className="flex justify-center items-center">
             <a
-              href="https://www.amazon.com/dp/B0FK48ZB8D/ref=tmm_pap_swatch_0?_encoding=UTF8&dib_tag=se&dib=eyJ2IjoiMSJ9.5Ryr3VO0Oo4G5ELjCEElxA.kxRVC8uT-pHCVVAfZFfL_dk7rIJlu67ygwY0hSi9BHA&qid=1753725149&sr=1-1"
+              href=""
               target="_blank"
               rel="noopener noreferrer"
             >
-              <button className="bg-white text-[#1a4280] px-8 py-3 rounded-full hover:bg-[#1a4280] hover:text-white transition-all duration-300 transform hover:scale-105 font-semibold whitespace-nowrap cursor-pointer">
+              <button className="bg-white text-[#1a4280] px-8 py-3 rounded-full hover:bg-[#6b7280] hover:text-white transition-all duration-300 transform hover:scale-105 font-semibold whitespace-nowrap cursor-pointer">
                 Get the Book
               </button>
             </a>
@@ -131,9 +123,9 @@ export default function Footer() {
         {/* Bottom Section */}
         <div className="border-t border-white/20 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-white/80 mb-4 md:mb-0 text-center md:text-left">
-            © 2025 Jacob Ken Robinson. All rights reserved.
+            © 2025 Promise Hope. All rights reserved.
           </p>
-          <p className="text-sm">
+          {/* <p className="text-sm">
             Created by{" "}
             <Link
               href={"https://americanbookfounders.com/"}
@@ -142,7 +134,7 @@ export default function Footer() {
             >
               Americanbookfounders
             </Link>
-          </p>
+          </p> */}
         </div>
       </div>
     </footer>

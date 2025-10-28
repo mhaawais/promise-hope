@@ -5,22 +5,22 @@ export default function ContactInfo() {
     <div className="space-y-8">
       {/* Contact Details */}
       <div className="bg-white rounded-2xl shadow-xl p-8">
-        <h2 className="text-3xl font-bold text-[#1a4280] mb-6">Get in Touch</h2>
+        <h2 className="text-3xl font-bold text-[#C6A15B] mb-6">Get in Touch</h2>
 
         <div className="space-y-6">
           <div className="flex items-center">
-            <div className="w-12 h-12 bg-gradient-to-r from-[#1a4280] to-[#6989b0] rounded-full flex items-center justify-center mr-4">
+            <div className="w-12 h-12 bg-[#b6ab14] rounded-full flex items-center justify-center mr-4">
               <i className="ri-mail-line text-white text-xl"></i>
             </div>
             <div>
-              <h3 className="font-semibold text-[#1a4280]">Email</h3>
+              <h3 className="font-semibold text-[#9b742d]">Email</h3>
               <a
-                href="mailto:info@jacobkenrobinson.com"
+                href="mailto:info@promisehope.com"
                 className="text-gray-600 hover:underline break-all"
               >
-                info@jacobkenrobinson.com
+                info@promisehope.com
               </a>
-              <br />
+              {/* <br />
               <span className="text-sm text-gray-500">or</span>
               <br />
                <a
@@ -28,38 +28,38 @@ export default function ContactInfo() {
                 className="text-gray-600 hover:underline break-all"
               >
                 suitman49@gmail.com
-              </a>
+              </a> */}
             </div>
           </div>
 
           <div className="flex items-center">
-            <div className="w-12 h-12 bg-gradient-to-r from-[#1a4280] to-[#6989b0] rounded-full flex items-center justify-center mr-4">
+            <div className="w-12 h-12 bg-[#b6ab14] rounded-full flex items-center justify-center mr-4">
               <i className="ri-phone-line text-white text-xl"></i>
             </div>
             <div>
-              <h3 className="font-semibold text-[#1a4280]">Phone</h3>
+              <h3 className="font-semibold text-[#9b742d]">Phone</h3>
               <a
-                href="tel:2175209236"
+                href="tel:2171112222"
                 className="text-gray-600 hover:underline"
               >
-                (217) 520‑9236
+                (217) 111‑2222
               </a>
             </div>
           </div>
 
           <div className="flex items-center">
-            <div className="w-12 h-12 bg-gradient-to-r from-[#1a4280] to-[#6989b0] rounded-full flex items-center justify-center mr-4">
+            <div className="w-12 h-12 bg-[#b6ab14] rounded-full flex items-center justify-center mr-4">
               <i className="ri-map-pin-line text-white text-xl"></i>
             </div>
             <div>
-              <h3 className="font-semibold text-[#1a4280]">Location</h3>
+              <h3 className="font-semibold text-[#9b742d]">Location</h3>
               <a
-                href="https://www.google.com/maps/place/Illinois"
+                href=""
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-600 hover:underline"
               >
-                Illinois
+                ..
               </a>
             </div>
           </div>
@@ -68,7 +68,7 @@ export default function ContactInfo() {
 
       {/* Social Media */}
       <div className="bg-white rounded-2xl shadow-xl p-8">
-        <h3 className="text-2xl font-bold text-[#1a4280] mb-6">Follow Me</h3>
+        <h3 className="text-2xl font-bold text-[#C6A15B] mb-6">Follow Me</h3>
 
         <div className="grid grid-cols-2 gap-4">
           <a
@@ -92,7 +92,7 @@ export default function ContactInfo() {
           </a>
 
           <a
-            href="https://www.facebook.com/profile.php?id=61579292437244"
+            href="https://www.facebook.com/"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center p-4 bg-gray-200 rounded-lg hover:bg-gray-300 transition-colors duration-300 cursor-pointer"

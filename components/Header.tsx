@@ -15,7 +15,7 @@ export default function Header() {
           {/* Logo */}
           <Link href="/">
             <Image
-              src="/assets/images/logo-1.JPG"
+              src="/assets/images/logo-2.JPG"
               alt="logo"
               width={100}
               height={100}
@@ -27,37 +27,25 @@ export default function Header() {
           <nav className="hidden lg:flex items-center space-x-8">
             <Link
               href="/"
-              className="text-gray-800 hover:text-[#1a4280] hover:underline transition-colors duration-300 font-semibold hover:font-bold text-lg"
+              className="text-[#C6A15B] hover:text-[#6b7280] hover:underline transition-colors duration-300 font-semibold hover:font-bold text-lg"
             >
               Home
             </Link>
             <Link
               href="/book"
-              className="text-gray-800 hover:text-[#1a4280] hover:underline transition-colors duration-300 font-semibold hover:font-bold text-lg"
+              className="text-[#C6A15B] hover:text-[#6b7280] hover:underline transition-colors duration-300 font-semibold hover:font-bold text-lg"
             >
               Book
             </Link>
             <Link
-              href="/pre-order"
-              className="text-gray-800 hover:text-[#1a4280] hover:underline transition-colors duration-300 font-semibold hover:font-bold text-lg"
+              href="/about"
+              className="text-[#C6A15B] hover:text-[#6b7280] hover:underline transition-colors duration-300 font-semibold hover:font-bold text-lg"
             >
-              Pre-Order
-            </Link>
-             <Link
-              href="/blogs"
-              className="text-gray-800 hover:text-[#1a4280] hover:underline transition-colors duration-300 font-semibold hover:font-bold text-lg"
-            >
-              Blogs
-            </Link>
-            <Link
-              href="/author"
-              className="text-gray-800 hover:text-[#1a4280] hover:underline transition-colors duration-300 font-semibold hover:font-bold text-lg"
-            >
-              Author
+              About
             </Link>
             <Link
               href="/contact"
-              className="text-gray-800 hover:text-[#1a4280] hover:underline transition-colors duration-300 font-semibold hover:font-bold text-lg"
+              className="text-[#C6A15B] hover:text-[#6b7280] hover:underline transition-colors duration-300 font-semibold hover:font-bold text-lg"
             >
               Contact
             </Link>
@@ -66,11 +54,11 @@ export default function Header() {
           {/* Get Book Button */}
           <div className="hidden lg:flex items-center space-x-4">
             <a
-              href="https://www.amazon.com/dp/B0FK48ZB8D/ref=tmm_pap_swatch_0?_encoding=UTF8&dib_tag=se&dib=eyJ2IjoiMSJ9.5Ryr3VO0Oo4G5ELjCEElxA.kxRVC8uT-pHCVVAfZFfL_dk7rIJlu67ygwY0hSi9BHA&qid=1753725149&sr=1-1"
+              href=""
               target="_blank"
               rel="noopener noreferrer"
             >
-              <button className="bg-gradient-to-r from-[#1a4280] to-[#6989b0] text-white font-bold text-xl px-10 py-5 rounded-full hover:shadow-lg transition-all duration-300 transform hover:scale-105 whitespace-nowrap cursor-pointer">
+              <button className="bg-gradient-to-r from-[#C6A15B] to-[#f59e0b] text-white font-bold text-xl px-10 py-5 rounded-full hover:shadow-lg transition-all duration-300 transform hover:scale-105 whitespace-nowrap cursor-pointer">
                 Get the Book
               </button>
             </a>
@@ -98,46 +86,34 @@ export default function Header() {
           <nav className="py-4 space-y-4 flex flex-col items-center">
             <Link
               href="/"
-              className="block text-gray-800 hover:text-[#1a4280] hover:underline transition-colors duration-300 font-bold text-[18px]"
+              className="block text-[#C6A15B] hover:text-[#6b7280] hover:underline transition-colors duration-300 font-bold text-[18px]"
             >
               Home
             </Link>
             <Link
               href="/book"
-              className="block text-gray-800 hover:text-[#1a4280] hover:underline transition-colors duration-300 font-bold text-[18px]"
+              className="block text-[#C6A15B] hover:text-[#6b7280] hover:underline transition-colors duration-300 font-bold text-[18px]"
             >
               Book
             </Link>
             <Link
-              href="/pre-order"
-              className="block text-gray-800 hover:text-[#1a4280] hover:underline transition-colors duration-300 font-bold text-[18px]"
+              href="/about"
+              className="block text-[#C6A15B] hover:text-[#6b7280] hover:underline transition-colors duration-300 font-bold text-[18px]"
             >
-              Pre-Order
-            </Link>
-            <Link
-              href="/blogs"
-              className="block text-gray-800 hover:text-[#1a4280] hover:underline transition-colors duration-300 font-bold text-[18px]"
-            >
-              Blogs
-            </Link>
-            <Link
-              href="/author"
-              className="block text-gray-800 hover:text-[#1a4280] hover:underline transition-colors duration-300 font-bold text-[18px]"
-            >
-              Author
+              About
             </Link>
             <Link
               href="/contact"
-              className="block text-gray-800 hover:text-[#1a4280] hover:underline transition-colors duration-300 font-bold text-[18px]"
+              className="block text-[#C6A15B] hover:text-[#6b7280] hover:underline transition-colors duration-300 font-bold text-[18px]"
             >
               Contact
             </Link>
             <a
-              href="https://www.amazon.com/dp/B0FK48ZB8D/ref=tmm_pap_swatch_0?_encoding=UTF8&dib_tag=se&dib=eyJ2IjoiMSJ9.5Ryr3VO0Oo4G5ELjCEElxA.kxRVC8uT-pHCVVAfZFfL_dk7rIJlu67ygwY0hSi9BHA&qid=1753725149&sr=1-1"
+              href=""
               target="_blank"
               rel="noopener noreferrer"
             >
-              <button className="bg-gradient-to-r from-[#1a4280] to-[#6989b0] text-white px-8 py-4 font-semibold rounded-full hover:shadow-lg transition-all duration-300 transform hover:scale-105 whitespace-nowrap cursor-pointer">
+              <button className="bg-gradient-to-r from-[#C6A15B] to-[#f59e0b] text-white px-8 py-4 font-semibold rounded-full hover:shadow-lg transition-all duration-300 transform hover:scale-105 whitespace-nowrap cursor-pointer">
                 Get the Book
               </button>
             </a>

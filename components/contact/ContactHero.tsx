@@ -3,7 +3,7 @@
 export default function ContactHero() {
   return (
     <section className="relative py-20 overflow-hidden">
-      {/* Background */}
+      {/* Background       bg-gradient-to-r from-[#C6A15B]/60 to-[#6989b0]/60   */}
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{
@@ -11,7 +11,7 @@ export default function ContactHero() {
           backgroundImage: `url("/assets/images/pic-6.jpg")`,
         }}
       >
-        <div className="absolute inset-0 bg-gradient-to-r from-[#1a4280]/60 to-[#6989b0]/60"></div>
+        <div className="absolute inset-0"></div>
       </div>
 
       {/* Content */}
@@ -29,42 +29,42 @@ export default function ContactHero() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
             <div className="bg-[#212121] hover:bg-[#383838] backdrop-blur-sm rounded-lg p-6 border border-white/20">
               <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                <i className="ri-mail-line text-blue-400 text-2xl"></i>
+                <i className="ri-mail-line text-[#C6A15B] text-2xl"></i>
               </div>
               <h3 className="text-xl font-semibold mb-2">Email</h3>
               <a
-                href="mailto:suitman49@gmail.com"
+                href="mailto:promisehope@gmail.com"
                 className="text-white/80 hover:underline break-all"
               >
-                suitman49@gmail.com
+                promisehope@gmail.com
               </a>
             </div>
 
             <div className="bg-[#212121] hover:bg-[#383838] backdrop-blur-sm rounded-lg p-6 border border-white/20">
               <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                <i className="ri-phone-line text-blue-400 text-2xl"></i>
+                <i className="ri-phone-line text-[#C6A15B] text-2xl"></i>
               </div>
               <h3 className="text-xl font-semibold mb-2">Phone</h3>
               <a
-                href="tel:2175209236"
+                href="tel:2171112222"
                 className="text-white/80 hover:underline"
               >
-                (217) 520‑9236
+                (217) 111‑2222
               </a>
             </div>
 
             <div className="bg-[#212121] hover:bg-[#383838] backdrop-blur-sm rounded-lg p-6 border border-white/20">
               <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                <i className="ri-map-pin-line text-blue-400 text-2xl"></i>
+                <i className="ri-map-pin-line text-[#C6A15B] text-2xl"></i>
               </div>
               <h3 className="text-xl font-semibold mb-2">Location</h3>
               <a
-                href="https://www.google.com/maps/place/Illinois"
+                href=""
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white/80 hover:underline"
               >
-                Illinois
+                ..
               </a>
             </div>
           </div>

@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     icon: [
       // `/assets/logo/Author-Logo.png?v=${faviconVersion}`,
       // "/favicon.ico",
-      { url: "/assets/images/logo-1.JPG" },
+      { url: "/assets/images/logo-2.JPG" },
     ],
   },
 };
