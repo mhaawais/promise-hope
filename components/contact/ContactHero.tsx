@@ -7,8 +7,7 @@ export default function ContactHero() {
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{
-          //   backgroundImage: `url('https://readdy.ai/api/search-image?query=Elegant%20writing%20desk%20with%20vintage%20typewriter%2C%20warm%20golden%20lighting%2C%20cozy%20literary%20atmosphere%2C%20inspiring%20writer%20workspace%2C%20sophisticated%20home%20office%20setting&width=1920&height=600&seq=contacthero1&orientation=landscape')`
-          backgroundImage: `url("/assets/images/pic-6.jpg")`,
+         backgroundImage: `url("/assets/images/pic-6.jpg")`,
         }}
       >
         <div className="absolute inset-0"></div>

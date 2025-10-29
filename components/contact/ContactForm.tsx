@@ -13,43 +13,6 @@ export default function ContactForm() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState("");
 
-  // const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
-  //   setFormData({
-  //     ...formData,
-  //     [e.target.name]: e.target.value
-  //   });
-  // };
-
-  // const handleSubmit = async (e: React.FormEvent) => {
-  //   e.preventDefault();
-
-  //   if (!formData.name || !formData.email || !formData.message) {
-  //     setSubmitStatus('Please fill in all required fields.');
-  //     return;
-  //   }
-
-  //   if (formData.message.length > 500) {
-  //     setSubmitStatus('Message must be 500 characters or less.');
-  //     return;
-  //   }
-
-  //   setIsSubmitting(true);
-  //   setSubmitStatus('');
-
-  //   try {
-  //     // Simulate form submission
-  //     await new Promise(resolve => setTimeout(resolve, 1500));
-  //     setSubmitStatus('Thank you for your message! I\'ll get back to you soon.');
-  //     setFormData({ name: '', email: '', subject: '', message: '' });
-  //   // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  //   } catch (error) {
-  //     setSubmitStatus('Something went wrong. Please try again.');
-  //   } finally {
-  //     setIsSubmitting(false);
-  //   }
-  // };
-
-  // const [status, setStatus] = useState("");
 
   const handleChange = (
     e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
@@ -137,50 +100,6 @@ export default function ContactForm() {
             placeholder="your.email@example.com"
           />
         </div>
-
-        {/* <div>
-          <label
-            htmlFor="subject"
-            className="block text-sm font-medium text-gray-700 mb-2"
-          >
-            Subject
-          </label>
-          <select
-            type="text"
-            id="subject"
-            name="subject"
-            value={formData.subject}
-            onChange={handleChange}
-            className="w-full px-4 py-3 pr-8 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#1a4280] focus:border-transparent transition-all duration-300"
-          >
-            <option value="">Select a subject</option>
-            <option value="general">General Inquiry</option>
-            <option value="collaboration">Collaboration Opportunity</option>
-            <option value="interview">Interview Request</option>
-            <option value="book-club">Book Club Discussion</option>
-            <option value="writing-advice">Writing Advice</option>
-            <option value="other">Other</option>
-          </select>
-        </div> */}
-
-        {/* <div>
-          <label
-            htmlFor="subject"
-            className="block text-sm font-medium text-gray-700 mb-2"
-          >
-            Subject *
-          </label>
-          <input
-            type="text"
-            id="subject"
-            name="subject"
-            value={formData.subject}
-            onChange={handleChange}
-            required
-            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#1a4280] focus:border-transparent transition-all duration-300"
-            placeholder="Enter the subject of your message"
-          />
-        </div> */}
 
         <div>
           <label

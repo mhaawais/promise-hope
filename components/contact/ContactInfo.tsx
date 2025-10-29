@@ -20,15 +20,6 @@ export default function ContactInfo() {
               >
                 info@promisehope.com
               </a>
-              {/* <br />
-              <span className="text-sm text-gray-500">or</span>
-              <br />
-               <a
-                href="mailto:suitman49@gmail.com"
-                className="text-gray-600 hover:underline break-all"
-              >
-                suitman49@gmail.com
-              </a> */}
             </div>
           </div>
 
@@ -113,54 +104,6 @@ export default function ContactInfo() {
         </div>
       </div>
 
-      {/* FAQ */}
-      {/* <div className="bg-white rounded-2xl shadow-xl p-8">
-        <h3 className="text-2xl font-bold text-[#1a4280] mb-6">Frequently Asked Questions</h3>
-        
-        <div className="space-y-4">
-          <div className="border-b border-gray-200 pb-4">
-            <h4 className="font-semibold text-[#1a4280] mb-2">Do you accept speaking engagements?</h4>
-            <p className="text-gray-600 text-sm">Yes, I&apos;m available for literary events, universities, and book clubs. Please include event details in your message.</p>
-          </div>
-          
-          <div className="border-b border-gray-200 pb-4">
-            <h4 className="font-semibold text-[#1a4280] mb-2">Can you review my manuscript?</h4>
-            <p className="text-gray-600 text-sm">I offer limited manuscript reviews through my mentorship program. Please inquire about availability and rates.</p>
-          </div>
-          
-          <div className="border-b border-gray-200 pb-4">
-            <h4 className="font-semibold text-[#1a4280] mb-2">When is your next book coming out?</h4>
-            <p className="text-gray-600 text-sm">I&apos;m currently working on my next novel, expected to be released in 2025. Sign up for my newsletter for updates!</p>
-          </div>
-          
-          <div>
-            <h4 className="font-semibold text-[#1a4280] mb-2">How long does it take to respond?</h4>
-            <p className="text-gray-600 text-sm">I typically respond to messages within 2-3 business days. For urgent matters, please indicate so in your subject line.</p>
-          </div>
-        </div>
-      </div> */}
-
-      {/* Office Hours */}
-      {/* <div className="bg-gradient-to-r from-[#1a4280] to-[#6989b0] rounded-2xl p-8 text-white">
-        <h3 className="text-2xl font-bold mb-4">Office Hours</h3>
-        <div className="space-y-2">
-          <div className="flex justify-between">
-            <span>Monday - Friday:</span>
-            <span>9:00 AM - 5:00 PM</span>
-          </div>
-          <div className="flex justify-between">
-            <span>Saturday:</span>
-            <span>10:00 AM - 2:00 PM</span>
-          </div>
-          <div className="flex justify-between">
-            <span>Sunday:</span>
-            <span>Closed</span>
-          </div>
-        </div>
-        <p className="text-white/80 text-sm mt-4">
-          For urgent matters outside these hours, please indicate in your message and I&apos;ll respond as soon as possible.
-        </p>
-      </div> */}
     </div>
   );
 }
