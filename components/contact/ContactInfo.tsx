@@ -62,7 +62,7 @@ export default function ContactInfo() {
         <h3 className="text-2xl font-bold text-[#C6A15B] mb-6">Follow Me</h3>
 
         <div className="grid grid-cols-2 gap-4">
-          <a
+          {/* <a
             href="https://www.twitter.com/"
             target="_blank"
             rel="noopener noreferrer"
@@ -80,7 +80,7 @@ export default function ContactInfo() {
           >
             <i className="ri-instagram-fill text-pink-500 text-2xl mr-3"></i>
             <span className="font-medium">Instagram</span>
-          </a>
+          </a> */}
 
           <a
             href="https://www.facebook.com/"
@@ -92,7 +92,7 @@ export default function ContactInfo() {
             <span className="font-medium">Facebook</span>
           </a>
 
-          <a
+          {/* <a
             href="https://www.linkedin.com/"
             target="_blank"
             rel="noopener noreferrer"
@@ -100,7 +100,7 @@ export default function ContactInfo() {
           >
             <i className="ri-linkedin-fill text-blue-700 text-2xl mr-3"></i>
             <span className="font-medium">LinkedIn</span>
-          </a>
+          </a> */}
         </div>
       </div>
 

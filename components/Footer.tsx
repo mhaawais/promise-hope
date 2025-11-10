@@ -2,166 +2,145 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import {
-  FaFacebook,
-  FaTwitter,
-  FaInstagram,
-  FaLinkedin,
-  FaLocationArrow,
-  FaPhoneAlt,
-  FaEnvelope,
-  FaArrowUp,
-} from "react-icons/fa";
+import { FaFacebook, FaArrowUp } from "react-icons/fa";
 
 export default function Footer() {
   const year = new Date().getFullYear();
-
   const scrollTop = () => window.scrollTo({ top: 0, behavior: "smooth" });
 
   const social = [
     { href: "https://www.facebook.com/", label: "Facebook", Icon: FaFacebook },
-    { href: "https://www.twitter.com/", label: "Twitter", Icon: FaTwitter },
-    { href: "https://www.instagram.com/", label: "Instagram", Icon: FaInstagram },
-    { href: "https://www.linkedin.com/", label: "LinkedIn", Icon: FaLinkedin },
+    // { href: "https://www.instagram.com/", label: "Instagram", Icon: FaInstagram },
+    // { href: "https://www.linkedin.com/", label: "LinkedIn", Icon: FaLinkedin },
   ];
 
   return (
-    <footer className="relative text-black">
+    <footer
+      id="footer"
+      className="relative w-full text-gray-800 overflow-hidden"
+    >
+      {/* Background Gradient */}
+      <div className="absolute inset-0 bg-gradient-to-b from-[#fffaf3] via-[#f6ebcf] to-[#f4e0a3]" />
+      <div className="absolute inset-0 pointer-events-none [background:radial-gradient(60%_60%_at_80%_0%,rgba(198,161,91,0.25)_0%,transparent_70%),radial-gradient(40%_40%_at_20%_100%,rgba(251,191,36,0.25)_0%,transparent_70%)]" />
 
-      {/* Gradient background matching logo (gold theme) */}
-      <div className="bg-gradient-to-r from-[#C6A15B] via-[#d4a24a] to-[#f59e0b] relative overflow-hidden">
-        <div
-          aria-hidden
-          className="pointer-events-none absolute inset-0 opacity-10"
-          style={{
-            backgroundImage:
-              "radial-gradient(currentColor 1px, transparent 1px), radial-gradient(currentColor 1px, transparent 1px)",
-            backgroundSize: "16px 16px",
-            backgroundPosition: "0 0, 8px 8px",
-            color: "#fff",
-          }}
-        />
-
-        <div className="container mx-auto px-4 py-16">
-          <div className="grid grid-cols-1 md:grid-cols-12 gap-10">
-            {/* Brand / About */}
-            <div className="md:col-span-6">
-              <Link href="/" className="flex items-center gap-3 mb-5">
-                <div className="relative w-16 h-16 rounded-full bg-white shadow ring-8 ring-white/30">
-                  <Image
-                    src="/assets/images/logo-2.JPG"
-                    alt="Promise Hope logo"
-                    fill
-                    className="object-contain p-2"
-                    sizes="64px"
-                    priority
-                  />
-                </div>
-                <span className="font-extrabold text-xl tracking-wide text-[#2e0101] drop-shadow">
-                  PROMISE&nbsp;HOPE
-                </span>
-                </Link>
-
-              <p className="text-white/85 leading-relaxed max-w-lg">
-                Discover captivating stories and heartfelt insights from a good author.
-                Join thousands of readers on an unforgettable literary journey.
-              </p>
-
-              {/* Socials */}
-              <div className="mt-6 flex gap-3">
-                {social.map(({ href, label, Icon }) => (
-                  <a
-                    key={label}
-                    href={href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label={label}
-                    className="group w-10 h-10 rounded-full bg-white/95 hover:bg-black transition-colors grid place-items-center shadow-md"
-                  >
-                    <Icon className="text-xl text-[#996e20] group-hover:text-white transition-colors" />
-                  </a>
-                ))}
+      <div className="relative max-w-7xl mx-auto px-6 lg:px-12 py-20 sm:py-24 md:py-28">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-16 items-start">
+          {/* Left Column: About */}
+          <div className="md:col-span-5">
+            <Link href="/" className="flex items-center gap-3 mb-5">
+              <div className="relative w-16 h-16 rounded-full bg-white shadow ring-8 ring-white/30">
+                <Image
+                  src="/assets/images/logo-2.JPG"
+                  alt="Promise Hope Logo"
+                  fill
+                  className="object-contain p-2"
+                />
               </div>
-            </div>
+              <span className="font-extrabold text-2xl tracking-wide text-[#2e0101]">
+                PROMISE&nbsp;HOPE
+              </span>
+            </Link>
 
-            {/* Quick Links */}
-            <div className="md:col-span-3">
-              <h3 className="text-[#1a1a1a] font-bold text-lg mb-4">Quick Links</h3>
-              <ul className="space-y-2">
-                {[
-                  { href: "/", label: "Home" },
-                  { href: "/book", label: "Book" },
-                  { href: "/about", label: "About" },
-                  { href: "/contact", label: "Contact" },
-                ].map(({ href, label }) => (
-                  <li key={href}>
-                    <Link
-                      href={href}
-                      className="text-white/90 hover:text-black hover:underline underline-offset-4 transition-colors font-medium"
-                    >
-                      {label}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            {/* Get Book CTA */}
-            <div className="md:col-span-3 flex flex-col justify-start items-center md:items-start">
-              <h3 className="text-[#1a1a1a] font-bold text-lg mb-4">Get the Book</h3>
-              <p className="text-white/85 mb-4 max-w-xs">
-                Start your inspiring journey today by grabbing your copy.
-              </p>
-              <a href="" target="_blank" rel="noopener noreferrer">
-                <button className="bg-white text-[#966a19] px-6 py-3 rounded-full font-semibold shadow hover:bg-black hover:text-white transition-all hover:scale-[1.03]">
-                  Get the Book
-                </button>
-              </a>
-            </div>
-          </div>
-
-          {/* Contact Strip */}
-          <div className="mt-12 rounded-2xl bg-white/90 backdrop-blur p-5 shadow-md">
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 text-[#1a1a1a]">
-              <div className="flex items-center gap-3 justify-center sm:justify-start">
-                <FaLocationArrow className="text-xl text-[#C6A15B]" />
-                <p className="text-sm sm:text-base">
-                  123 Lit
-                </p>
-              </div>
-              <div className="flex items-center gap-3 justify-center sm:justify-start">
-                <FaPhoneAlt className="text-xl text-[#C6A15B]" />
-                <a href="tel:+12171112222" className="text-sm sm:text-base hover:underline">
-                  (217) 111‑2222
-                </a>
-              </div>
-              <div className="flex items-center gap-3 justify-center sm:justify-start">
-                <FaEnvelope className="text-xl text-[#C6A15B]" />
-                <a
-                  href="mailto:hello@promisehope.com"
-                  className="text-sm sm:text-base hover:underline"
-                >
-                  hello@promisehope.com
-                </a>
-              </div>
-            </div>
-          </div>
-
-          {/* Bottom bar */}
-          <div className="border-t border-white/30 mt-10 pt-6 flex flex-col md:flex-row items-center justify-between gap-4">
-            <p className="text-white/85 text-center md:text-left">
-              © {year} Promise Hope. All rights reserved.
+            <p className="text-gray-700/90 leading-relaxed max-w-md font-[Inter]">
+              Promise Hope is an author, worship minister, and inspirational
+              speaker passionate about helping people discover their purpose in
+              the midst of pain. Her words awaken hope, faith, and healing in
+              every heart.
             </p>
 
-            <button
-              onClick={scrollTop}
-              aria-label="Scroll to top"
-              className="inline-flex items-center gap-2 bg-white text-[#C6A15B] px-4 py-2 rounded-full shadow hover:bg-black hover:text-white transition-colors"
-            >
-              <FaArrowUp />
-              Top
-            </button>
+            {/* Social Links */}
+            <div className="mt-6 flex gap-4">
+              {social.map(({ href, label, Icon }) => (
+                <a
+                  key={label}
+                  href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={label}
+                  className="group w-10 h-10 rounded-full bg-white/90 hover:bg-[#C6A15B] grid place-items-center shadow-md transition-all duration-300 hover:scale-110"
+                >
+                  <Icon className="text-xl text-[#C6A15B] group-hover:text-white transition-colors duration-300" />
+                </a>
+              ))}
+            </div>
           </div>
+
+          {/* Middle Column: Book Showcase */}
+          <div className="md:col-span-4 flex flex-col items-center text-center relative">
+            <div className="relative w-full max-w-[260px] sm:max-w-[300px] md:max-w-[320px]">
+              <div className="relative rounded-2xl bg-white/80 p-2 shadow-[0_20px_60px_rgba(198,161,91,0.35)]">
+                <Image
+                  src="/assets/images/book-7.jpg"
+                  alt="The Way to Greatness book cover"
+                  width={400}
+                  height={500}
+                  className="w-full h-auto object-cover rounded-xl"
+                />
+                <div className="absolute inset-0 rounded-xl bg-gradient-to-t from-transparent via-white/10 to-transparent pointer-events-none" />
+              </div>
+              {/* subtle glow */}
+              <div
+                aria-hidden
+                className="absolute -inset-4 rounded-3xl bg-[radial-gradient(70%_50%_at_50%_100%,rgba(198,161,91,0.45)_0%,transparent_70%)] blur-3xl -z-10"
+              />
+            </div>
+
+            <p className="mt-5 text-sm sm:text-base font-medium text-gray-700/80 max-w-xs">
+              “The Way to Greatness” — a powerful message of healing, purpose,
+              and faith through life’s challenges.
+            </p>
+
+            <Link
+              href=""
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-5 inline-block"
+            >
+              <button className="bg-gradient-to-r from-[#C6A15B] to-[#f59e0b] text-white px-8 py-3 rounded-full font-semibold shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300">
+                Get the Book
+              </button>
+            </Link>
+          </div>
+
+          {/* Right Column: Quick Links */}
+          <div className="md:col-span-3 text-center md:text-left">
+            <h3 className="text-[#1a1a1a] font-bold text-lg mb-5 tracking-wide">
+              Quick Links
+            </h3>
+            <ul className="space-y-2 font-[Inter]">
+              {[
+                { href: "/", label: "Home" },
+                { href: "/book", label: "Book" },
+                { href: "/about", label: "About" },
+                { href: "/contact", label: "Contact" },
+              ].map(({ href, label }) => (
+                <li key={href}>
+                  <Link
+                    href={href}
+                    className="text-gray-700/90 hover:text-yellow-500 hover:underline underline-offset-4 transition-all duration-300 font-medium"
+                  >
+                    {label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+
+        {/* Bottom Border + CTA Row */}
+        <div className="border-t border-[#C6A15B]/30 mt-16 pt-8 flex flex-col md:flex-row items-center justify-between gap-6">
+          <p className="text-gray-700/80 text-sm sm:text-base text-center md:text-left font-[Inter]">
+            © {year} Promise Hope. All rights reserved.
+          </p>
+
+          <button
+            onClick={scrollTop}
+            aria-label="Scroll to top"
+            className="inline-flex items-center gap-2 bg-gradient-to-r from-[#C6A15B] to-[#f59e0b] text-white px-5 py-2.5 rounded-full font-medium shadow hover:shadow-lg transition-all hover:-translate-y-0.5"
+          >
+            <FaArrowUp />
+            Back to Top
+          </button>
         </div>
       </div>
     </footer>

@@ -1,14 +1,15 @@
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
-import ContactHero from '@/components/contact/ContactHero';
-import ContactForm from '@/components/contact/ContactForm';
-import ContactInfo from '@/components/contact/ContactInfo';
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+import ContactHero from "@/components/contact/ContactHero";
+import ContactForm from "@/components/contact/ContactForm";
+import ContactInfo from "@/components/contact/ContactInfo";
 
-import type { Metadata } from 'next';
+import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Contact – Promise Hope",  
-  description: "Get in touch with Promise Hope for speaking engagements, interviews, or inquiries about book and etc",
+  title: "Contact – Promise Hope",
+  description:
+    "Get in touch with Promise Hope for speaking engagements, interviews, or inquiries about book and etc",
 };
 
 export default function ContactPage() {

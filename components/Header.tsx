@@ -53,11 +53,7 @@ export default function Header() {
 
           {/* Get Book Button */}
           <div className="hidden lg:flex items-center space-x-4">
-            <a
-              href=""
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <a href="" target="_blank" rel="noopener noreferrer">
               <button className="bg-gradient-to-r from-[#C6A15B] to-[#f59e0b] text-white font-bold text-xl px-10 py-5 rounded-full hover:shadow-lg transition-all duration-300 transform hover:scale-105 whitespace-nowrap cursor-pointer">
                 Get the Book
               </button>
@@ -108,11 +104,7 @@ export default function Header() {
             >
               Contact
             </Link>
-            <a
-              href=""
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <a href="" target="_blank" rel="noopener noreferrer">
               <button className="bg-gradient-to-r from-[#C6A15B] to-[#f59e0b] text-white px-8 py-4 font-semibold rounded-full hover:shadow-lg transition-all duration-300 transform hover:scale-105 whitespace-nowrap cursor-pointer">
                 Get the Book
               </button>
