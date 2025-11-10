@@ -70,7 +70,7 @@ export default function Footer() {
             <div className="relative w-full max-w-[260px] sm:max-w-[300px] md:max-w-[320px]">
               <div className="relative rounded-2xl bg-white/80 p-2 shadow-[0_20px_60px_rgba(198,161,91,0.35)]">
                 <Image
-                  src="/assets/images/book-7.jpg"
+                  src="/assets/images/book-7.JPG"
                   alt="The Way to Greatness book cover"
                   width={400}
                   height={500}
