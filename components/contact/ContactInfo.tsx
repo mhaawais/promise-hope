@@ -82,15 +82,15 @@ export default function ContactInfo() {
             <span className="font-medium">Instagram</span>
           </a> 
 
-          {/* <a
-            href="https://www.facebook.com/"
+          <a
+            href="https://www.tiktok.com/@hopepromisebigiri1?_r=1&_t=ZP-91I3bYkVG62"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center p-4 bg-gray-200 rounded-lg hover:bg-gray-300 transition-colors duration-300 cursor-pointer"
           >
-            <i className="ri-facebook-fill text-blue-600 text-2xl mr-3"></i>
-            <span className="font-medium">Facebook</span>
-          </a> */}
+            <i className="ri-tiktok-fill text-black text-2xl mr-3"></i>
+            <span className="font-medium">Tiktok</span>
+          </a>
 
           <a
             href="https://www.youtube.com/@hopepromisebigirimana"
