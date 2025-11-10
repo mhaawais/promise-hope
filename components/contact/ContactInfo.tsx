@@ -15,10 +15,10 @@ export default function ContactInfo() {
             <div>
               <h3 className="font-semibold text-[#9b742d]">Email</h3>
               <a
-                href="mailto:info@promisehope.com"
+                href="mailto:promisehopeauthor@gmail.com"
                 className="text-gray-600 hover:underline break-all"
               >
-                info@promisehope.com
+                promisehopeauthor@gmail.com
               </a>
             </div>
           </div>
@@ -30,10 +30,10 @@ export default function ContactInfo() {
             <div>
               <h3 className="font-semibold text-[#9b742d]">Phone</h3>
               <a
-                href="tel:2171112222"
+                href="tel:+18165942665"
                 className="text-gray-600 hover:underline"
               >
-                (217) 111‑2222
+                +1 (816) 594 2665
               </a>
             </div>
           </div>
@@ -50,7 +50,7 @@ export default function ContactInfo() {
                 rel="noopener noreferrer"
                 className="text-gray-600 hover:underline"
               >
-                ..
+                US
               </a>
             </div>
           </div>

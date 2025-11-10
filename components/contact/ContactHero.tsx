@@ -32,10 +32,10 @@ export default function ContactHero() {
               </div>
               <h3 className="text-xl font-semibold mb-2">Email</h3>
               <a
-                href="mailto:promisehope@gmail.com"
+                href="mailto:promisehopeauthor@gmail.com"
                 className="text-white/80 hover:underline break-all"
               >
-                promisehope@gmail.com
+                Promisehopeauthor@gmail.com
               </a>
             </div>
 
@@ -45,10 +45,10 @@ export default function ContactHero() {
               </div>
               <h3 className="text-xl font-semibold mb-2">Phone</h3>
               <a
-                href="tel:2171112222"
+                href="tel:+18165942665"
                 className="text-white/80 hover:underline"
               >
-                (217) 111‑2222
+                +1 (816) 594 2665
               </a>
             </div>
 
@@ -63,7 +63,7 @@ export default function ContactHero() {
                 rel="noopener noreferrer"
                 className="text-white/80 hover:underline"
               >
-                ..
+                US
               </a>
             </div>
           </div>
