@@ -70,19 +70,19 @@ export default function ContactInfo() {
           >
             <i className="ri-twitter-fill text-blue-500 text-2xl mr-3"></i>
             <span className="font-medium">Twitter</span>
-          </a>
+          </a> */}
 
           <a
-            href="https://www.instagram.com/"
+            href="https://www.instagram.com/bigirimanahopepromise?igsh=aTBqejI0MzhjNw=="
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center p-4 bg-gray-200 rounded-lg hover:bg-gray-300 transition-colors duration-300 cursor-pointer"
           >
             <i className="ri-instagram-fill text-pink-500 text-2xl mr-3"></i>
             <span className="font-medium">Instagram</span>
-          </a> */}
+          </a> 
 
-          <a
+          {/* <a
             href="https://www.facebook.com/"
             target="_blank"
             rel="noopener noreferrer"
@@ -90,17 +90,17 @@ export default function ContactInfo() {
           >
             <i className="ri-facebook-fill text-blue-600 text-2xl mr-3"></i>
             <span className="font-medium">Facebook</span>
-          </a>
+          </a> */}
 
-          {/* <a
-            href="https://www.linkedin.com/"
+          <a
+            href="https://www.youtube.com/@hopepromisebigirimana"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center p-4 bg-gray-200 rounded-lg hover:bg-gray-300 transition-colors duration-300 cursor-pointer"
           >
-            <i className="ri-linkedin-fill text-blue-700 text-2xl mr-3"></i>
-            <span className="font-medium">LinkedIn</span>
-          </a> */}
+            <i className="ri-youtube-fill text-red-700 text-2xl mr-3"></i>
+            <span className="font-medium">Youtube</span>
+          </a>
         </div>
       </div>
 

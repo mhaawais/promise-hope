@@ -2,16 +2,16 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { FaFacebook, FaArrowUp } from "react-icons/fa";
+import { FaArrowUp, FaYoutube, FaInstagram } from "react-icons/fa";
 
 export default function Footer() {
   const year = new Date().getFullYear();
   const scrollTop = () => window.scrollTo({ top: 0, behavior: "smooth" });
 
   const social = [
-    { href: "https://www.facebook.com/", label: "Facebook", Icon: FaFacebook },
-    // { href: "https://www.instagram.com/", label: "Instagram", Icon: FaInstagram },
-    // { href: "https://www.linkedin.com/", label: "LinkedIn", Icon: FaLinkedin },
+    // { href: "https://www.facebook.com/", label: "Facebook", Icon: FaFacebook },
+    { href: "https://www.instagram.com/bigirimanahopepromise?igsh=aTBqejI0MzhjNw==", label: "Instagram", Icon: FaInstagram },
+    { href: "https://www.youtube.com/@hopepromisebigirimana", label: "LinkedIn", Icon: FaYoutube },
   ];
 
   return (
